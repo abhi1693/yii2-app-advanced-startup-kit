@@ -1,105 +1,26 @@
-Yii 2 Practical-A Application Template
-======================================
+Yii2 Practical Application Advanced Template Startup-kit
+========================================================
 
-Yii 2 Practical-A Application Template is a skeleton Yii 2 application based on the 
-[yii2-advanced template](https://github.com/yiisoft/yii2-app-advanced/) best for 
-developing complex Web applications with multiple tiers. The template allows a 
-**practical** method to directly access the frontend from the app root.
+This is Yii2 start application template.
+It was created and developing as a fast start for building an advanced sites based on Yii2.
+It covers typical use cases for a new project and will help you not to waste your time doing the same work in every project
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
-
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
-
-Why yii2-practical-a?
----------------------
-
-After installing a `app`, in the yii2-advanced application you normally would access the
-frontend and backend by:
-
-```
-http://domain/app/frontend/web
-http://domain/app/backend/web
-```
-
-However, in many **practical** scenarios (especially on shared and single domain hosts) one 
-would want their users to directly access frontend and backend as:
-
-```
-http://domain/app
-http://domain/app/backend
-```
-
-The `yii2-app-practical-a` enables you to achieve just that by carefully moving and rearranging the 
-bootstrap files and web components of frontend to work directly out of the app root and backend out
-of the `backend`. The `frontend/web` and `backend/web` folders are entirely eliminated and one can 
-directly access the application frontend this way:
-
-```
-http://domain/app
-```
-
-and backend this way
-
-```
-http://domain/backend
-```
-
-All other aspects of the app configuration remain the same as the **yii2-advanced** app. The `common`, and `console` 
-will remain as is. The frontend config, assets, models, controllers, views, widgets and components, will still reside within 
-the `frontend` directory. The backend config, assets, models, controllers, views, widgets and components, will still reside within 
-the `backend` directory. It is just the web access that is moved out to app root for frontend and to the backend root folder for 
-backend.
-
-SOME KEY ADDITIONS
--------------------
-
-1. The template has some security preconfigured for users with Apache web servers. It has a default `.htaccess` security configuration setup.
-2. The template has prettyUrl enabled by default and the changes have been made to `.htaccess` as well as `urlManager`
-   component config in the common config directory.
-3. The template has isolated cookie settings for backend and frontend so that you can seamlessly access frontend and backend from same client. 
-   The config files includes special `identity` and `csrf` cookie parameter settings for backend. Edit it according to your needs if necessary.
-   
-DIRECTORY STRUCTURE
--------------------
-```
-/
-    /                    contains the frontend entry script, favicon, and robots.txt.
-    assets/              contains the frontend web runtime assets
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    /                    contains the backend entry script, favicon, and robots.txt.
-    assets/              contains the backend web runtime assets
-    assets_b/            contains backend application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    views/               contains view files for the Web application
-frontend
-    assets/              contains frontend application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    views/               contains view files for the Web application
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-tests                    contains various tests for the "practical" application
-    codeception/         contains tests developed with Codeception PHP Testing Framework
-```
-
+FEATURES
+--------
+- Based on yii2-advanced application template
+- Beautiful and open source dashboard theme for backend [http://almsaeedstudio.com/AdminLTE](http://almsaeedstudio.com/AdminLTE)
+- Sign in, Sign up, profile(avatar, locale, personal data) etc
+- OAuth authorization
+- User management: CRUD
+- RBAC
+- File storage component
+- Key-value storage component
+- Yii2 log web interface
+- Application events component
+- Web Cache Controller
+- System information web interface
+- Elfinder Extension [https://github.com/MihailDev/yii2-elfinder](https://github.com/MihailDev/yii2-elfinder)
+- many other features coming soon
 
 REQUIREMENTS
 ------------
@@ -110,17 +31,6 @@ The minimum requirement by this application template that your Web server suppor
 INSTALLATION
 ------------
 
-### Install from an Archive File
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `practical` that is directly under the Web root.
-
-> Note: When using a archive file method, the vendor folder is not automatically created. You must 
- extract the [yii2-advanced vendor folder from here](https://github.com/yiisoft/yii2/releases/download/2.0.0/yii-advanced-app-2.0.0.tgz).
- Then you must copy this folder directly under the app root (i.e. `practical` directory).
-  
-After this is complete, follow the instructions given in "GETTING STARTED".
-
 ### Install via Composer
 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
@@ -129,28 +39,26 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install the application using the following command:
 
 ~~~
-php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta2"
-php composer.phar create-project --prefer-dist --stability=dev kartik-v/yii2-app-practical-a practical-a
+php composer.phar global require "fxp/composer-asset-plugin"
+php composer.phar create-project --prefer-dist --stability=dev abhi1693/yii2-app-advanced-startup-kit
 ~~~
+
+### Install from GitHub
+
+Extract the github archive file or clone this repository.
+
+```bash
+git clone https://github.com/trntv/yii2-starter-kit.git
+```
+
+After extraction run
+
+```bash php composer.phar install```
 
 GETTING STARTED
 ---------------
 
-After you install the application, you have to conduct the following steps to initialize
-the installed application. You only need to do these once for all.
-
-1. Run command `init` to initialize the application with a specific environment.
-2. Create a new database and adjust the `components['db']` configuration in `common/config/main-local.php` accordingly.
-3. Apply migrations with console command `yii migrate`. This will create tables needed for the application to work.
-4. Set document roots of your Web server:
-
-- for frontend `/path/to/yii-application/` and using the URL `http://frontend/`
-- for backend `/path/to/yii-application/backend/web/` and using the URL `http://backend/`
-
-To login into the application, you need to first sign up, with any of your email address, username and password.
-Then, you can login into the application with same email address and password at any time.
-
-5. Edit the config files as needed. Especially set the correct paths for the user identity cookie in `backend/config/main-local.php`.
+After you install the application, go to `http://yourhost/backend` and the application will help help you setup everything else.
 
 TESTING
 -------
