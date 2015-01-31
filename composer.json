@@ -1,0 +1,40 @@
+{
+    "name": "abhi1693/yii2-app-advanced-startup-kit",
+    "description": "Yii 2 Practical Advanced Application Template (Startup Kit)",
+    "keywords": ["yii2", "framework", "practical", "application template","advanced"],
+    "type": "project",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Abhimanyu Saharan",
+            "email": "abhimanyu@teamvulcans.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/abhi1693/yii2-app-advanced-startup-kit/issues?state=open",
+        "source": "https://github.com/abhi1693/yii2-app-advanced-startup-kit/"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
