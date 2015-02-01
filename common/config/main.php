@@ -1,13 +1,13 @@
 <?php
-return [
-    'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
-    'components' => [
-        'cache' => [
-            'class' => 'yii\caching\FileCache',
-        ],
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-        ]
-    ],
-];
+	return [
+		'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+		'components' => [
+			'config'     => [
+				'class' => 'abhimanyu\config\components\Config'
+			],
+			'urlManager' => [
+				'enablePrettyUrl' => TRUE,
+				'showScriptName'  => FALSE,
+			]
+		],
+	];
