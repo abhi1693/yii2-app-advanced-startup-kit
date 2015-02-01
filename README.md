@@ -2,6 +2,7 @@ Yii2 Practical Application Advanced Template Startup-kit
 ========================================================
 
 [![Code Climate](https://codeclimate.com/github/abhi1693/yii2-app-advanced-startup-kit/badges/gpa.svg)](https://codeclimate.com/github/abhi1693/yii2-app-advanced-startup-kit)
+[![Latest Stable Version](https://poser.pugx.org/abhi1693/yii2-app-advanced-startup-kit/v/stable.svg)](https://packagist.org/packages/abhi1693/yii2-app-advanced-startup-kit) [![Total Downloads](https://poser.pugx.org/abhi1693/yii2-app-advanced-startup-kit/downloads.svg)](https://packagist.org/packages/abhi1693/yii2-app-advanced-startup-kit) [![Latest Unstable Version](https://poser.pugx.org/abhi1693/yii2-app-advanced-startup-kit/v/unstable.svg)](https://packagist.org/packages/abhi1693/yii2-app-advanced-startup-kit) [![License](https://poser.pugx.org/abhi1693/yii2-app-advanced-startup-kit/license.svg)](https://packagist.org/packages/abhi1693/yii2-app-advanced-startup-kit)
 
 This is Yii2 start application template.
 It was created and developing as a fast start for building an advanced sites based on Yii2.
