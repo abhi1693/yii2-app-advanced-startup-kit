@@ -5,12 +5,11 @@
 	use backend\helpers\Configuration;
 	use backend\helpers\SystemCheck;
 	use backend\models\installer\setup\DatabaseForm;
-	use yii\console\Application;
+	use Yii;
 	use yii\db\Exception;
 	use yii\web\Controller;
 	use yii\web\Response;
 	use yii\widgets\ActiveForm;
-	use Yii;
 
 	class SetupController extends Controller
 	{
@@ -79,11 +78,15 @@
 						// Check DB Connection
 						if (Yii::$app->db->getIsActive()) {
 							// Write Config
-							$config['components']['db']['class']      = 'yii\db\Connection';
-							$config['components']['db']['dsn']        = $dsn;
-							$config['components']['db']['username']   = $form->username;
-							$config['components']['db']['password']   = $form->password;
-							$config['components']['db']['charset']    = 'utf8';
+							$config['components']['db']['class']    = 'yii\db\Connection';
+							$config['components']['db']['dsn']      = $dsn;
+							$config['components']['db']['username'] = $form->username;
+							$config['components']['db']['password'] = $form->password;
+							$config['components']['db']['charset']  = 'utf8';
+
+							$config['params']['installer']['db']['installer_hostname'] = $form->hostname;
+							$config['params']['installer']['db']['installer_database'] = $form->database;
+							$config['params']['installer']['db']['installer_username'] = $form->username;
 
 							Configuration::setConfig($config);
 							$success = TRUE;
@@ -96,6 +99,15 @@
 						$errorMsg = $e->getMessage();
 					}
 				}
+			} else {
+				if (isset($config['params']['installer']['db']['installer_hostname']))
+					$form->hostname = $config['params']['installer']['db']['installer_hostname'];
+
+				if (isset($config['params']['installer']['db']['installer_database']))
+					$form->database = $config['params']['installer']['db']['installer_database'];
+
+				if (isset($config['params']['installer']['db']['installer_username']))
+					$form->username = $config['params']['installer']['db']['installer_username'];
 			}
 
 			return $this->render('database', ['model' => $form, 'success' => $success, 'errorMsg' => $errorMsg]);
@@ -110,7 +122,7 @@
 				Yii::$app->db->open();
 
 			// Flush the caches
-			if(Yii::$app->cache){
+			if (Yii::$app->cache) {
 				Yii::$app->cache->flush();
 			}
 
