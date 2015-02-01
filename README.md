@@ -42,7 +42,7 @@ You can then install the application using the following command:
 
 ```bash
 php composer.phar global require "fxp/composer-asset-plugin"
-php composer.phar create-project --prefer-dist --stability=dev abhi1693/yii2-app-advanced-startup-kit
+php composer.phar create-project --prefer-dist --stability=dev abhi1693/yii2-app-advanced-startup-kit demo-app
 ```
 
 ### Install from GitHub
