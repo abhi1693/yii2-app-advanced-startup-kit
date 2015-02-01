@@ -1,6 +1,7 @@
 <?php
 	namespace backend\controllers;
 
+	use backend\helpers\enums\Configuration as Enum;
 	use Yii;
 	use yii\web\Controller;
 
@@ -30,7 +31,7 @@
 		{
 			// Checks if the application has an active
 			// database connection
-			if (Yii::$app->db->getIsActive())
+			if (Yii::$app->config->get(Enum::APP_SECRET) != '')
 				return $this->render('index');
 			else
 				return $this->redirect(Yii::$app->urlManager->createUrl('//installer/install/index'));
