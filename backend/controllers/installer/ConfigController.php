@@ -62,6 +62,8 @@
 		 */
 		public function actionIndex()
 		{
+			//todo set app name
+
 			if (Database::checkConnection()) {
 				$this->setupInitialData();
 
