@@ -12,6 +12,7 @@ It covers typical use cases for a new project and will help you not to waste you
 
 FEATURES
 --------
+- Application Auto Installer
 - Based on yii2-advanced application template
 - Beautiful and open source dashboard theme for backend [http://almsaeedstudio.com/AdminLTE](http://almsaeedstudio.com/AdminLTE)
 - Sign in, Sign up, profile(avatar, locale, personal data) etc
