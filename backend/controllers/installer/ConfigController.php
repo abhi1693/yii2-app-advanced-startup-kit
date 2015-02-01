@@ -75,6 +75,8 @@
 		{
 			$form       = new ConfigBasicForm();
 			$form->name = Yii::$app->config->get(Enum::APP_NAME);
+			if (Yii::$app->config->get(Enum::ADMIN_EMAIL) != '')
+				$form->email = Yii::$app->config->get(Enum::ADMIN_EMAIL);
 
 			if ($form->load(Yii::$app->request->post())) {
 				if (Yii::$app->request->isAjax) {
