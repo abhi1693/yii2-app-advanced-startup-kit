@@ -3,12 +3,11 @@
 		require(__DIR__ . '/../../common/config/params.php'),
 		require(__DIR__ . '/../../common/config/params-local.php'),
 		require(__DIR__ . '/params.php'),
-		require(__DIR__ . '/params-local.php'),
-		require (__DIR__ . '/local/_settings.php')
+		require(__DIR__ . '/params-local.php')
 	);
 
 	return [
-		'id'                  => 'app-practical-a-backend',
+		'id'                  => 'app-backend',
 		'basePath'            => dirname(__DIR__),
 		'controllerNamespace' => 'backend\controllers',
 		'bootstrap'           => ['log'],
