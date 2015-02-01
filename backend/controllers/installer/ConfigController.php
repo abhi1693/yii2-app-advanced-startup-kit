@@ -62,8 +62,6 @@
 		 */
 		public function actionIndex()
 		{
-			//todo set app name
-
 			if (Database::checkConnection()) {
 				$this->setupInitialData();
 
@@ -107,7 +105,6 @@
 		 */
 		public function actionAdmin()
 		{
-			//todo add superuser
 			//return $this->render('admin');
 			return $this->redirect(Yii::$app->urlManager->createUrl('//installer/config/finished'));
 		}
