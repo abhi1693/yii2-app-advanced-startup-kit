@@ -14,18 +14,14 @@ FEATURES
 --------
 - Application Auto Installer
 - Based on yii2-advanced application template
-- Beautiful and open source dashboard theme for backend [http://almsaeedstudio.com/AdminLTE](http://almsaeedstudio.com/AdminLTE)
+- Beautiful and open source dashboard theme for backend
 - Sign in, Sign up, profile(avatar, locale, personal data) etc
 - OAuth authorization
 - User management: CRUD
 - RBAC
-- File storage component
-- Key-value storage component
 - Yii2 log web interface
 - Application events component
-- Web Cache Controller
 - System information web interface
-- Elfinder Extension [https://github.com/MihailDev/yii2-elfinder](https://github.com/MihailDev/yii2-elfinder)
 - many other features coming soon
 
 REQUIREMENTS
@@ -44,10 +40,10 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
 You can then install the application using the following command:
 
-~~~
+```bash
 php composer.phar global require "fxp/composer-asset-plugin"
 php composer.phar create-project --prefer-dist --stability=dev abhi1693/yii2-app-advanced-startup-kit
-~~~
+```
 
 ### Install from GitHub
 
@@ -64,7 +60,7 @@ After extraction run
 GETTING STARTED
 ---------------
 
-After you install the application, go to `http://yourhost/backend` and the application will help help you setup everything else.
+After you install the application, go to `http://yourhost/backend` and the application will help you setup everything else.
 
 TESTING
 -------
