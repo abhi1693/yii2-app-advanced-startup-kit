@@ -1,4 +1,4 @@
 <?php
 	return [
-		'configFilePath' => dirname(__FILE__) . '/main-local.php'
+		'dynamicConfigFile' => dirname(__FILE__) . '/main-local.php'
 	];
