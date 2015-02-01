@@ -4,8 +4,91 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fe67fdad759c2121696d41b0eacaeece",
+    "hash": "69dc8cfcc2261201d7e1c6a8b270de67",
     "packages": [
+        {
+            "name": "abhi1693/yii2-config",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abhi1693/yii2-config.git",
+                "reference": "65e2b5248a3b2bed89387f1f83c8fb91a78296ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abhi1693/yii2-config/zipball/65e2b5248a3b2bed89387f1f83c8fb91a78296ab",
+                "reference": "65e2b5248a3b2bed89387f1f83c8fb91a78296ab",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "abhimanyu\\config\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT License"
+            ],
+            "authors": [
+                {
+                    "name": "Abhimanyu Saharan",
+                    "email": "abhimanyu@teamvulcans.com"
+                }
+            ],
+            "description": "Yii2 manage configuration from database",
+            "keywords": [
+                " config",
+                "extension",
+                "yii2"
+            ],
+            "time": "2015-02-01 08:23:16"
+        },
+        {
+            "name": "abhi1693/yii2-enum",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abhi1693/yii2-enum.git",
+                "reference": "3c3cccb244c95ef4156be87ea48eb1c5c5ebfd6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abhi1693/yii2-enum/zipball/3c3cccb244c95ef4156be87ea48eb1c5c5ebfd6b",
+                "reference": "3c3cccb244c95ef4156be87ea48eb1c5c5ebfd6b",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "abhimanyu\\enum\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT License"
+            ],
+            "authors": [
+                {
+                    "name": "Abhimanyu Saharan",
+                    "email": "abhimanyu@teamvulcans.com"
+                }
+            ],
+            "description": "Enumerable Helper",
+            "keywords": [
+                "enum",
+                "extension",
+                "module",
+                "yii2"
+            ],
+            "time": "2015-01-29 07:28:39"
+        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.2",
@@ -376,12 +459,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "a937ae0904f2f8d93d9559c5a9f00606af048b80"
+                "reference": "157a69f1a76793cb19c0b00e3d47784c76bee9d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/a937ae0904f2f8d93d9559c5a9f00606af048b80",
-                "reference": "a937ae0904f2f8d93d9559c5a9f00606af048b80",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/157a69f1a76793cb19c0b00e3d47784c76bee9d7",
+                "reference": "157a69f1a76793cb19c0b00e3d47784c76bee9d7",
                 "shasum": ""
             },
             "require": {
@@ -457,7 +540,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-01-30 22:23:04"
+            "time": "2015-02-01 03:26:51"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
