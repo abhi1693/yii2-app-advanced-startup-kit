@@ -29,8 +29,7 @@
 		 */
 		public function actionIndex()
 		{
-			// Checks if the application has an active
-			// database connection
+			// Checks if the application has been installed successfully
 			if (Yii::$app->config->get(Enum::APP_SECRET) != '')
 				return $this->render('index');
 			else
