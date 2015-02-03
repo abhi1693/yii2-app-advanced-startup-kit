@@ -11,8 +11,16 @@
 		'basePath'            => dirname(__DIR__),
 		'controllerNamespace' => 'backend\controllers',
 		'bootstrap'           => ['log'],
-		'modules'             => [],
+		'modules'             => [
+			'user' => [
+				'class' => 'abhimanyu\user\UserModule'
+			]
+		],
 		'components'          => [
+			'user'         => [
+				'class' => 'abhimanyu\user\models\User',
+				'loginUrl'      => ['/user/auth/login']
+			],
 			'log'          => [
 				'traceLevel' => YII_DEBUG ? 3 : 0,
 				'targets'    => [

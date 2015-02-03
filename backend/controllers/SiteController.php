@@ -3,6 +3,7 @@
 
 	use backend\helpers\enums\Configuration as Enum;
 	use Yii;
+	use yii\filters\AccessControl;
 	use yii\web\Controller;
 
 	/**
@@ -10,6 +11,23 @@
 	 */
 	class SiteController extends Controller
 	{
+		public function behaviors()
+		{
+			return [
+				'access' => [
+					'class' => AccessControl::className(),
+					'only'  => ['index'],
+					'rules' => [
+						[
+							'actions' => ['index'],
+							'allow'   => TRUE,
+							'roles'   => ['@'],
+						],
+					],
+				],
+			];
+		}
+
 		/**
 		 * @inheritdoc
 		 */
