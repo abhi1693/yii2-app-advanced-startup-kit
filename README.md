@@ -52,7 +52,7 @@ php composer.phar create-project --prefer-dist --stability=dev abhi1693/yii2-app
 Extract the github archive file or clone this repository.
 
 ```bash
-git clone https://github.com/trntv/yii2-starter-kit.git
+git clone https://github.com/abhi1693/yii2-app-advanced-startup-kit.git
 ```
 
 After extraction run
