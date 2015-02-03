@@ -18,8 +18,8 @@
 		],
 		'components'          => [
 			'user'         => [
-				'class' => 'abhimanyu\user\models\User',
-				'loginUrl'      => ['/user/auth/login']
+				'identityClass' => 'abhimanyu\user\models\User',
+				'loginUrl' => ['/user/auth/login']
 			],
 			'log'          => [
 				'traceLevel' => YII_DEBUG ? 3 : 0,

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "69dc8cfcc2261201d7e1c6a8b270de67",
+    "hash": "4402134e2b3a0d4581cd897ada0aad7c",
     "packages": [
         {
             "name": "abhi1693/yii2-config",
@@ -88,6 +88,48 @@
                 "yii2"
             ],
             "time": "2015-01-29 07:28:39"
+        },
+        {
+            "name": "abhi1693/yii2-user",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abhi1693/yii2-user.git",
+                "reference": "b635cf135c0308d882f40c84b8e4f5ec1ceefd0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/b635cf135c0308d882f40c84b8e4f5ec1ceefd0e",
+                "reference": "b635cf135c0308d882f40c84b8e4f5ec1ceefd0e",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-0": {
+                    "abhimanyu\\user\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abhimanyu Saharan",
+                    "email": "abhimanyu@teamvulcans.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii2 user registration and authentication module",
+            "keywords": [
+                "module",
+                "user",
+                "yii"
+            ],
+            "time": "2015-02-03 13:05:45"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -185,16 +227,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.59",
+            "version": "3.1.60",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "6fcd2cf28ee111f8aadcd42a1b8d43d6f7a5c0ba"
+                "reference": "da0a365b45b3040219a83c5abb5fcd3a51d7ed89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/6fcd2cf28ee111f8aadcd42a1b8d43d6f7a5c0ba",
-                "reference": "6fcd2cf28ee111f8aadcd42a1b8d43d6f7a5c0ba",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/da0a365b45b3040219a83c5abb5fcd3a51d7ed89",
+                "reference": "da0a365b45b3040219a83c5abb5fcd3a51d7ed89",
                 "shasum": ""
             },
             "require": {
@@ -459,12 +501,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "157a69f1a76793cb19c0b00e3d47784c76bee9d7"
+                "reference": "01299530f3a716ffabb6da4c675fff6b7beceb49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/157a69f1a76793cb19c0b00e3d47784c76bee9d7",
-                "reference": "157a69f1a76793cb19c0b00e3d47784c76bee9d7",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/01299530f3a716ffabb6da4c675fff6b7beceb49",
+                "reference": "01299530f3a716ffabb6da4c675fff6b7beceb49",
                 "shasum": ""
             },
             "require": {
@@ -540,7 +582,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-01 03:26:51"
+            "time": "2015-02-02 23:03:13"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
