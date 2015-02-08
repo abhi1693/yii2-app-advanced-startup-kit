@@ -12,8 +12,11 @@
 		'controllerNamespace' => 'backend\controllers',
 		'bootstrap'           => ['log'],
 		'modules'             => [
-			'user' => [
+			'user'      => [
 				'class' => 'abhimanyu\user\UserModule'
+			],
+			'installer' => [
+				'class' => \abhimanyu\installer\InstallerModule::className()
 			]
 		],
 		'components'          => [

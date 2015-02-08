@@ -1,7 +1,7 @@
 <?php
 	namespace backend\controllers;
 
-	use backend\helpers\enums\Configuration as Enum;
+	use abhimanyu\installer\helpers\enums\Configuration as Enum;
 	use Yii;
 	use yii\filters\AccessControl;
 	use yii\web\Controller;
@@ -28,6 +28,16 @@
 			];
 		}
 
+		public function beforeAction($action)
+		{
+			// Checks if application has been installed successfully
+			if (!Yii::$app->params[Enum::APP_INSTALLED]) {
+				return $this->redirect(Yii::$app->urlManager->createUrl('//installer/install'));
+			}
+
+			return parent::beforeAction($action);
+		}
+
 		/**
 		 * @inheritdoc
 		 */
@@ -47,10 +57,6 @@
 		 */
 		public function actionIndex()
 		{
-			// Checks if the application has been installed successfully
-			if (Yii::$app->config->get(Enum::APP_SECRET) != '' && Yii::$app->params['installed'] === TRUE)
-				return $this->render('index');
-			else
-				return $this->redirect(Yii::$app->urlManager->createUrl('//installer/install/index'));
+			return $this->render('index');
 		}
 	}

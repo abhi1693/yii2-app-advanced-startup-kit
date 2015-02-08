@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4402134e2b3a0d4581cd897ada0aad7c",
+    "hash": "a41d01d7efba09f09b273130a3974254",
     "packages": [
         {
             "name": "abhi1693/yii2-config",
@@ -90,17 +90,60 @@
             "time": "2015-01-29 07:28:39"
         },
         {
+            "name": "abhi1693/yii2-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abhi1693/yii2-installer.git",
+                "reference": "29060199dd5a648a902881b3b6a5eb251da6fa67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/29060199dd5a648a902881b3b6a5eb251da6fa67",
+                "reference": "29060199dd5a648a902881b3b6a5eb251da6fa67",
+                "shasum": ""
+            },
+            "require": {
+                "abhi1693/yii2-enum": "1.0.0",
+                "abhi1693/yii2-user": "dev-master",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "abhimanyu\\installer\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abhimanyu Saharan",
+                    "email": "abhimanyu@teamvulcans.com"
+                }
+            ],
+            "description": "Yii2 installer module for Yii2 app startup kit",
+            "keywords": [
+                "installer",
+                "yii",
+                "yii2"
+            ],
+            "time": "2015-02-08 18:54:42"
+        },
+        {
             "name": "abhi1693/yii2-user",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-user.git",
-                "reference": "b635cf135c0308d882f40c84b8e4f5ec1ceefd0e"
+                "reference": "8f03b2b6b3c125685b9fc2b00bb14719ab5410d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/b635cf135c0308d882f40c84b8e4f5ec1ceefd0e",
-                "reference": "b635cf135c0308d882f40c84b8e4f5ec1ceefd0e",
+                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/8f03b2b6b3c125685b9fc2b00bb14719ab5410d9",
+                "reference": "8f03b2b6b3c125685b9fc2b00bb14719ab5410d9",
                 "shasum": ""
             },
             "require": {
@@ -108,7 +151,7 @@
             },
             "type": "yii2-extension",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "abhimanyu\\user\\": ""
                 }
             },
@@ -129,7 +172,7 @@
                 "user",
                 "yii"
             ],
-            "time": "2015-02-03 13:05:45"
+            "time": "2015-02-08 17:54:01"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -227,16 +270,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.60",
+            "version": "3.1.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "da0a365b45b3040219a83c5abb5fcd3a51d7ed89"
+                "reference": "f2c086411d2557fc485c47afb3cecfa6c1de9ee2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/da0a365b45b3040219a83c5abb5fcd3a51d7ed89",
-                "reference": "da0a365b45b3040219a83c5abb5fcd3a51d7ed89",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/f2c086411d2557fc485c47afb3cecfa6c1de9ee2",
+                "reference": "f2c086411d2557fc485c47afb3cecfa6c1de9ee2",
                 "shasum": ""
             },
             "require": {
@@ -444,6 +487,51 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "raoul2000/yii2-bootswatch-asset",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/raoul2000/yii2-bootswatch-asset.git",
+                "reference": "fd1db711d930072860288d580a3ce01fd4baa3d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/raoul2000/yii2-bootswatch-asset/zipball/fd1db711d930072860288d580a3ce01fd4baa3d6",
+                "reference": "fd1db711d930072860288d580a3ce01fd4baa3d6",
+                "shasum": ""
+            },
+            "require": {
+                "thomaspark/bootswatch": "3.3.2",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "raoul2000\\bootswatch\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Raoul",
+                    "email": "raoul.boulard@gmail.com"
+                }
+            ],
+            "description": "Use Bootswatch theme in your Yii application with minimum effort",
+            "keywords": [
+                "assets",
+                "bootstrap",
+                "bootswatch",
+                "extension",
+                "skin",
+                "yii2"
+            ],
+            "time": "2015-01-31 16:54:21"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "dev-master",
             "source": {
@@ -496,17 +584,75 @@
             "time": "2015-01-18 13:49:36"
         },
         {
+            "name": "thomaspark/bootswatch",
+            "version": "v3.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thomaspark/bootswatch.git",
+                "reference": "7e6070630176d8a802c4837345d5998eac7c1d7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thomaspark/bootswatch/zipball/7e6070630176d8a802c4837345d5998eac7c1d7a",
+                "reference": "7e6070630176d8a802c4837345d5998eac7c1d7a",
+                "shasum": ""
+            },
+            "suggest": {
+                "robloach/component-installer": "Allows installation of Components via Composer"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "name": "bootswatch",
+                    "files": [
+                        "README.md",
+                        "LICENSE",
+                        "amelia/*",
+                        "cerulean/*",
+                        "cosmo/*",
+                        "cyborg/*",
+                        "darkly/*",
+                        "flatly/*",
+                        "fonts/*",
+                        "journal/*",
+                        "lumen/*",
+                        "paper/*",
+                        "readable/*",
+                        "sandstone/*",
+                        "simplex/*",
+                        "slate/*",
+                        "spacelab/*",
+                        "superhero/*",
+                        "united/*",
+                        "yeti/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "thomaspark",
+                    "email": "thomas@bootswatch.com"
+                }
+            ],
+            "description": "Themes for Bootstrap",
+            "time": "2015-01-23 03:42:19"
+        },
+        {
             "name": "yiisoft/yii2",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "01299530f3a716ffabb6da4c675fff6b7beceb49"
+                "reference": "588d8070c86cc37386a0908f2872c48e1e2259bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/01299530f3a716ffabb6da4c675fff6b7beceb49",
-                "reference": "01299530f3a716ffabb6da4c675fff6b7beceb49",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/588d8070c86cc37386a0908f2872c48e1e2259bc",
+                "reference": "588d8070c86cc37386a0908f2872c48e1e2259bc",
                 "shasum": ""
             },
             "require": {
@@ -582,7 +728,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-02 23:03:13"
+            "time": "2015-02-08 17:02:31"
         },
         {
             "name": "yiisoft/yii2-bootstrap",

@@ -1,6 +1,6 @@
 <?php
+	use abhimanyu\installer\helpers\enums\Configuration as Enum;
 	use backend\assets_b\AppAsset;
-	use backend\helpers\enums\Configuration as Enum;
 	use yii\bootstrap\Nav;
 	use yii\bootstrap\NavBar;
 	use yii\helpers\Html;
@@ -9,6 +9,7 @@
 	/* @var $this \yii\web\View */
 	/* @var $content string */
 
+	raoul2000\bootswatch\BootswatchAsset::$theme = Yii::$app->config->get(Enum::APP_BACKEND_THEME);
 	AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -33,7 +34,7 @@
 			              ],
 		              ]);
 		$menuItems = [
-			['label' => 'Home', 'url' => ['/site/index']],
+			['label' => 'Home', 'url' => Yii::$app->user->logout()],
 		];
 
 		echo Nav::widget([
