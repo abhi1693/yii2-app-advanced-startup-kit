@@ -33,9 +33,16 @@
 				              'class' => 'navbar-inverse navbar-fixed-top',
 			              ],
 		              ]);
-		$menuItems = [
-			['label' => 'Home', 'url' => Yii::$app->user->logout()],
-		];
+		if (Yii::$app->user->isGuest) {
+			$menuItems = [
+				['label' => 'Login', 'url' => ['/user/auth/login']]
+			];
+		} else {
+			$menuItems = [
+				['label' => 'Home', 'url' => ['/site/index']],
+				['label' => 'Logout', 'url' => Yii::$app->user->logout()]
+			];
+		}
 
 		echo Nav::widget([
 			                 'options' => ['class' => 'navbar-nav navbar-right'],
