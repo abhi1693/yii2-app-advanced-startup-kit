@@ -95,12 +95,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-installer.git",
-                "reference": "29060199dd5a648a902881b3b6a5eb251da6fa67"
+                "reference": "458d5d886dfce0e264251e945bdcc0938fa83d6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/29060199dd5a648a902881b3b6a5eb251da6fa67",
-                "reference": "29060199dd5a648a902881b3b6a5eb251da6fa67",
+                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/458d5d886dfce0e264251e945bdcc0938fa83d6d",
+                "reference": "458d5d886dfce0e264251e945bdcc0938fa83d6d",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +130,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-02-08 18:54:42"
+            "time": "2015-02-09 11:09:03"
         },
         {
             "name": "abhi1693/yii2-user",
@@ -138,12 +138,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-user.git",
-                "reference": "8f03b2b6b3c125685b9fc2b00bb14719ab5410d9"
+                "reference": "00ba14907ecf0ae33c333bf0794a9e59770d79fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/8f03b2b6b3c125685b9fc2b00bb14719ab5410d9",
-                "reference": "8f03b2b6b3c125685b9fc2b00bb14719ab5410d9",
+                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/00ba14907ecf0ae33c333bf0794a9e59770d79fa",
+                "reference": "00ba14907ecf0ae33c333bf0794a9e59770d79fa",
                 "shasum": ""
             },
             "require": {
@@ -172,7 +172,7 @@
                 "user",
                 "yii"
             ],
-            "time": "2015-02-08 17:54:01"
+            "time": "2015-02-09 11:25:02"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -647,12 +647,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "588d8070c86cc37386a0908f2872c48e1e2259bc"
+                "reference": "2ade9aa0187196c0451289137b7c592946ab6730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/588d8070c86cc37386a0908f2872c48e1e2259bc",
-                "reference": "588d8070c86cc37386a0908f2872c48e1e2259bc",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/2ade9aa0187196c0451289137b7c592946ab6730",
+                "reference": "2ade9aa0187196c0451289137b7c592946ab6730",
                 "shasum": ""
             },
             "require": {
@@ -728,7 +728,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-08 17:02:31"
+            "time": "2015-02-09 03:29:40"
         },
         {
             "name": "yiisoft/yii2-bootstrap",

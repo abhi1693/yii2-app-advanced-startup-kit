@@ -19,7 +19,7 @@
 					'only'  => ['index'],
 					'rules' => [
 						[
-							'actions' => ['index'],
+							'actions' => ['index', 'error'],
 							'allow'   => TRUE,
 							'roles'   => ['@'],
 						],
