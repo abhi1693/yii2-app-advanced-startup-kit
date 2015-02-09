@@ -14,7 +14,11 @@ It covers typical use cases for a new project and will help you not to waste you
 
 FEATURES
 --------
-- Application Auto Installer
+- Application Auto Installer includes:
+  - Application Baic Setup such as Application Name, Cache type, backend/frontend theme etc.
+  - Admin Account setup
+  - Mailer Component setup
+  - Auto migrate required tables required by the the application
 - Based on yii2-advanced application template
 - Beautiful and open source dashboard theme for backend
 - Sign in, Sign up, profile(avatar, locale, personal data) etc
