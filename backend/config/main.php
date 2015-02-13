@@ -13,7 +13,7 @@
 		'bootstrap'           => ['log'],
 		'modules'             => [
 			'user'      => [
-				'class' => 'abhimanyu\user\UserModule'
+				'class' => \abhimanyu\user\UserModule::className()
 			],
 			'installer' => [
 				'class' => \abhimanyu\installer\InstallerModule::className()
@@ -21,14 +21,14 @@
 		],
 		'components'          => [
 			'user'         => [
-				'identityClass' => 'abhimanyu\user\models\User',
-				'loginUrl' => ['/user/auth/login']
+				'identityClass' => \abhimanyu\user\models\UserIdentity::className(),
+				'loginUrl'      => ['/user/auth/login']
 			],
 			'log'          => [
 				'traceLevel' => YII_DEBUG ? 3 : 0,
 				'targets'    => [
 					[
-						'class'  => 'yii\log\FileTarget',
+						'class' => \yii\log\FileTarget::className(),
 						'levels' => ['error'],
 					],
 				],
