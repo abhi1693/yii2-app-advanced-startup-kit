@@ -22,7 +22,7 @@
 		'components'          => [
 			'user'         => [
 				'identityClass' => \abhimanyu\user\models\UserIdentity::className(),
-				'loginUrl'      => ['/user/auth/login']
+				'loginUrl'      => ['/user/auth/login'],
 			],
 			'log'          => [
 				'traceLevel' => YII_DEBUG ? 3 : 0,

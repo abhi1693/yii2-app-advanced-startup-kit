@@ -40,7 +40,7 @@
 		} else {
 			$menuItems = [
 				['label' => 'Home', 'url' => ['/site/index']],
-				['label' => 'Logout', 'url' => Yii::$app->user->logout()]
+				['label' => 'Logout', 'url' => ['/user/auth/logout'], 'linkOptions' => ['data-method' => 'post']]
 			];
 		}
 
