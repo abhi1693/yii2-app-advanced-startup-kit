@@ -66,7 +66,7 @@ After extraction run
 GETTING STARTED
 ---------------
 
-After you install the application, go to `http://yourhost/backend` and the application will help you setup everything else.
+After you install the application, run `init` command and select your environment then go to `http://yourhost/your-app/backend` and the application will help you setup everything else.
 
 TESTING
 -------
