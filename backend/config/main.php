@@ -28,8 +28,8 @@
 				'traceLevel' => YII_DEBUG ? 3 : 0,
 				'targets'    => [
 					[
-						'class' => \yii\log\FileTarget::className(),
-						'levels' => ['error'],
+						'class'  => \yii\log\FileTarget::className(),
+						'levels' => ['error', 'warning'],
 					],
 				],
 			],
