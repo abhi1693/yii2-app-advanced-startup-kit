@@ -9,7 +9,7 @@
 	/* @var $this \yii\web\View */
 	/* @var $content string */
 
-	raoul2000\bootswatch\BootswatchAsset::$theme = Yii::$app->config->get(Enum::APP_BACKEND_THEME);
+	raoul2000\bootswatch\BootswatchAsset::$theme = Yii::$app->config->get(Enum::APP_BACKEND_THEME, 'yeti');
 	AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -40,6 +40,8 @@
 		} else {
 			$menuItems = [
 				['label' => 'Home', 'url' => ['/site/index']],
+				['label' => 'Admin Panel', 'url' => ['/admin/index'], 'visible' =>
+					Yii::$app->user->identity->isAdmin],
 				['label' => 'Logout', 'url' => ['/user/auth/logout'], 'linkOptions' => ['data-method' => 'post']]
 			];
 		}

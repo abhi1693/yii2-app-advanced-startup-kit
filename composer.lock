@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a41d01d7efba09f09b273130a3974254",
+    "hash": "7e4628fd8e4e59142a481fb5534afe1c",
     "packages": [
         {
             "name": "abhi1693/yii2-config",
@@ -139,12 +139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-user.git",
-                "reference": "37947ea30f67500bac4d4058f601f7f256ee2169"
+                "reference": "c3944f3a34d3f807213d24f5698b90826c943e7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/37947ea30f67500bac4d4058f601f7f256ee2169",
-                "reference": "37947ea30f67500bac4d4058f601f7f256ee2169",
+                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/c3944f3a34d3f807213d24f5698b90826c943e7c",
+                "reference": "c3944f3a34d3f807213d24f5698b90826c943e7c",
                 "shasum": ""
             },
             "require": {
@@ -173,7 +173,7 @@
                 "user",
                 "yii"
             ],
-            "time": "2015-02-13 13:02:04"
+            "time": "2015-02-15 04:48:07"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -225,6 +225,22 @@
                 "responsive",
                 "web"
             ]
+        },
+        {
+            "name": "bower-asset/flot",
+            "version": "v0.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flot/flot.git",
+                "reference": "453b017cc5acfd75e252b93e8635f57f4196d45d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flot/flot/zipball/453b017cc5acfd75e252b93e8635f57f4196d45d",
+                "reference": "453b017cc5acfd75e252b93e8635f57f4196d45d",
+                "shasum": ""
+            },
+            "type": "bower-asset-library"
         },
         {
             "name": "bower-asset/jquery",
@@ -488,6 +504,101 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "kartik-v/yii2-krajee-base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-krajee-base.git",
+                "reference": "01e9fa8c19970070d0aba5b16a7bfd8c241bc7f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/01e9fa8c19970070d0aba5b16a7bfd8c241bc7f9",
+                "reference": "01e9fa8c19970070d0aba5b16a7bfd8c241bc7f9",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2-bootstrap": "@dev"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\base\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Base library and foundation components for all Yii2 Krajee extensions.",
+            "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+            "keywords": [
+                "base",
+                "extension",
+                "foundation",
+                "krajee",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-02-13 03:36:35"
+        },
+        {
+            "name": "kartik-v/yii2-widget-sidenav",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-sidenav.git",
+                "reference": "371bb89c3e58e1d346c37b9c1f67c3e42536f8f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-sidenav/zipball/371bb89c3e58e1d346c37b9c1f67c3e42536f8f5",
+                "reference": "371bb89c3e58e1d346c37b9c1f67c3e42536f8f5",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\sidenav\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced side navigation menu styled for bootstrap (sub repo split from yii2-widgets)",
+            "homepage": "https://github.com/kartik-v/yii2-widget-sidenav",
+            "keywords": [
+                "bootstrap",
+                "extension",
+                "jquery",
+                "menu",
+                "navigation",
+                "plugin",
+                "sidenav",
+                "widget",
+                "yii2"
+            ],
+            "time": "2014-11-09 18:27:43"
+        },
+        {
             "name": "raoul2000/yii2-bootswatch-asset",
             "version": "dev-master",
             "source": {
@@ -643,17 +754,50 @@
             "time": "2015-01-23 03:42:19"
         },
         {
+            "name": "trntv/systeminfo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trntv/systeminfo.git",
+                "reference": "7666c377ec41e102d856c97ab91ad51e65a6c067"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/trntv/systeminfo/zipball/7666c377ec41e102d856c97ab91ad51e65a6c067",
+                "reference": "7666c377ec41e102d856c97ab91ad51e65a6c067",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "trntv\\systeminfo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eugene Terentev",
+                    "email": "eugene@terentev.net"
+                }
+            ],
+            "description": "Simple system information helper",
+            "time": "2015-02-03 23:51:19"
+        },
+        {
             "name": "yiisoft/yii2",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "82b7112e7d43f61711f69039c1b192e942343567"
+                "reference": "b84eefce16dfd4580d52b4e30b6b8ec12a8f7075"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/82b7112e7d43f61711f69039c1b192e942343567",
-                "reference": "82b7112e7d43f61711f69039c1b192e942343567",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b84eefce16dfd4580d52b4e30b6b8ec12a8f7075",
+                "reference": "b84eefce16dfd4580d52b4e30b6b8ec12a8f7075",
                 "shasum": ""
             },
             "require": {
@@ -729,7 +873,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-13 02:29:00"
+            "time": "2015-02-14 15:36:19"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1040,12 +1184,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "7ca29cc5a130f3482f94dfc0448e813aef01f6c6"
+                "reference": "ae0d0925255fd4f1a3bd0fab8e8b8035e0901d4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/7ca29cc5a130f3482f94dfc0448e813aef01f6c6",
-                "reference": "7ca29cc5a130f3482f94dfc0448e813aef01f6c6",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/ae0d0925255fd4f1a3bd0fab8e8b8035e0901d4a",
+                "reference": "ae0d0925255fd4f1a3bd0fab8e8b8035e0901d4a",
                 "shasum": ""
             },
             "require": {
@@ -1079,7 +1223,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2015-02-12 12:56:55"
+            "time": "2015-02-13 14:09:50"
         },
         {
             "name": "yiisoft/yii2-faker",
