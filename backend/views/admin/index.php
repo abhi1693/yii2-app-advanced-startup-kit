@@ -6,88 +6,99 @@
 	 * Time: 10:51
 	 */
 
-	use trntv\systeminfo\SI;
+	use abhimanyu\systemInfo\SystemInfo;
 
 	/** @var $this \yii\web\View */
 
 	$this->title = 'Admin Panel - ' . Yii::$app->name;
-	$this->registerJsFile('/js/system-information/index.js',
-	                      [
-		                      'depends' =>
-			                      [
-				                      \yii\web\JqueryAsset::className(),
-				                      \backend\assets_b\Flot::className(),
-			                      ]
-	                      ]);
+
+	// Get System Information
+	$systemInfo = new SystemInfo();
+	$systemInfo = $systemInfo::getInfo();
 ?>
 
 <div id="system-information">
 	<div class="row">
-		<div class="col-lg-6 col-xs-12">
+		<div class="col-md-6">
 			<div class="box box-primary">
 				<div class="box-header">
-					<i class="glyphicon glyphicon-hdd"></i>
+					<i class="fa fa-hdd-o"></i>
 
 					<h3 class="box-title">Processor</h3>
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
-					<dl class="dl-horizontal">
-						<dt>Processor</dt>
-						<dd><?= SI::getCpuinfo('model name') ?></dd>
+					<table class="table">
+						<tr>
+							<td>Model</td>
+							<td><?= $systemInfo::getCpuModel() ?></td>
+						</tr>
 
-						<dt>Processor Architecture</dt>
-						<dd><?= SI::getArchitecture() ?></dd>
+						<tr>
+							<td>Architecture</td>
+							<td><?= $systemInfo::getCpuArchitecture() ?></td>
+						</tr>
 
-						<dt>Number of cores</dt>
-						<dd><?= SI::getCpuCores() ?></dd>
-					</dl>
+						<tr>
+							<td>No. of Cores</td>
+							<td><?= $systemInfo::getCpuCores() ?></td>
+						</tr>
+					</table>
 				</div>
 				<!-- /.box-body -->
 			</div>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12">
+		<div class="col-md-6">
 			<div class="box box-primary">
 				<div class="box-header">
-					<i class="glyphicon glyphicon-hdd"></i>
+					<i class="fa fa-server"></i>
 
-					<h3 class="box-title">Operating System</h3>
+					<h3 class="box-title">Server</h3>
 				</div>
 
 				<div class="box-body">
-					<dl class="dl-horizontal">
-						<dt>OS</dt>
-						<dd><?= SI::getOS() ?></dd>
+					<table class="table">
+						<tr>
+							<td>OS</td>
+							<td><?= $systemInfo::getOS() ?></td>
+						</tr>
 
-						<dt>OS Release</dt>
-						<dd><?= SI::getOSRelease() ?></dd>
+						<tr>
+							<td>Server System</td>
+							<td><?= $systemInfo::getServerSoftware() ?></td>
+						</tr>
 
-						<dt>Kernel version</dt>
-						<dd><?= SI::getKernelVersion() ?></dd>
-					</dl>
+						<tr>
+							<td>Load Average</td>
+							<td><?= $systemInfo::getLoad() ?></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
+	</div>
 
+	<div class="row">
 		<div class="col-lg-4 col-md-6 col-sm-12">
 			<div class="box box-primary">
 				<div class="box-header">
-					<i class="glyphicon glyphicon-time"></i>
+					<i class="fa fa-floppy-o"></i>
 
-					<h3 class="box-title">Time</h3>
+					<h3 class="box-title">Memory</h3>
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
-					<dl class="dl-horizontal">
-						<dt>System Date</dt>
-						<dd><?= Yii::$app->formatter->asDate(time()) ?></dd>
+					<table class="table">
+						<tr>
+							<td>Total Memory</td>
+							<td><?= Yii::$app->formatter->asShortSize($systemInfo::getTotalMemory()) ?></td>
+						</tr>
 
-						<dt>System Time</dt>
-						<dd><?= Yii::$app->formatter->asTime(time()) ?></dd>
-
-						<dt>Timezone</dt>
-						<dd><?= date_default_timezone_get() ?></dd>
-					</dl>
+						<tr>
+							<td>Free Memory</td>
+							<td><?= Yii::$app->formatter->asShortSize(0) ?></td>
+						</tr>
+					</table>
 				</div>
 				<!-- /.box-body -->
 			</div>
@@ -96,43 +107,52 @@
 		<div class="col-lg-4 col-md-6 col-sm-12">
 			<div class="box box-primary">
 				<div class="box-header">
-					<i class="fa fa-hdd-o"></i>
-
-					<h3 class="box-title">Network</h3>
-				</div>
-				<!-- /.box-header -->
-				<div class="box-body">
-					<dl class="dl-horizontal">
-						<dt>Hostname</dt>
-						<dd><?= SI::getHostname() ?></dd>
-
-						<dt>Internal IP</dt>
-						<dd><?= SI::getServerIP() ?></dd>
-
-						<dt>External IP</dt>
-						<dd><?= SI::getExternalIP() ?></dd>
-					</dl>
-				</div>
-				<!-- /.box-body -->
-			</div>
-		</div>
-
-		<div class="col-lg-4 col-md-6 col-sm-12">
-			<div class="box box-primary">
-				<div class="box-header">
-					<i class="fa fa-hdd-o"></i>
+					<i class="fa fa-database"></i>
 
 					<h3 class="box-title">Software</h3>
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
-					<dl class="dl-horizontal">
-						<dt>Web Server</dt>
-						<dd><?= SI::getServerSoftware() ?></dd>
+					<table class="table">
+						<tr>
+							<td>PHP</td>
+							<td><?= $systemInfo::getPhpVersion() ?></td>
+						</tr>
 
-						<dt>PHP Version</dt>
-						<dd><?= SI::getPhpVersion() ?></dd>
-					</dl>
+						<tr>
+							<td>DB</td>
+							<td><?= $systemInfo::getDbType() ?></td>
+						</tr>
+
+						<tr>
+							<td>DB Version</td>
+							<td><?= $systemInfo::getDbVersion() ?></td>
+						</tr>
+					</table>
+				</div>
+				<!-- /.box-body -->
+			</div>
+		</div>
+
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="box box-primary">
+				<div class="box-header">
+					<i class="fa fa-cogs"></i>
+
+					<h3 class="box-title">Framework</h3>
+				</div>
+				<!-- /.box-header -->
+				<div class="box-body">
+					<table class="table">
+						<tr>
+							<td>Name</td>
+							<td><?= Yii::powered() ?></td>
+						</tr>
+						<tr>
+							<td>Version</td>
+							<td><?= Yii::getVersion() ?></td>
+						</tr>
+					</table>
 				</div>
 				<!-- /.box-body -->
 			</div>
