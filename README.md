@@ -3,6 +3,7 @@ Yii2 Practical Application Advanced Template Startup-kit
 
 [![Join the chat at https://gitter.im/abhi1693/yii2-app-advanced-startup-kit](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/abhi1693/yii2-app-advanced-startup-kit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![Dependency Status](https://www.versioneye.com/user/projects/54e1e4630a910b08650001c6/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54e1e4630a910b08650001c6)
 [![Code Climate](https://codeclimate.com/github/abhi1693/yii2-app-advanced-startup-kit/badges/gpa.svg)](https://codeclimate.com/github/abhi1693/yii2-app-advanced-startup-kit)
 [![Latest Stable Version](https://poser.pugx.org/abhi1693/yii2-app-advanced-startup-kit/v/stable.svg)](https://packagist.org/packages/abhi1693/yii2-app-advanced-startup-kit) [![Total Downloads](https://poser.pugx.org/abhi1693/yii2-app-advanced-startup-kit/downloads.svg)](https://packagist.org/packages/abhi1693/yii2-app-advanced-startup-kit) [![Latest Unstable Version](https://poser.pugx.org/abhi1693/yii2-app-advanced-startup-kit/v/unstable.svg)](https://packagist.org/packages/abhi1693/yii2-app-advanced-startup-kit) [![License](https://poser.pugx.org/abhi1693/yii2-app-advanced-startup-kit/license.svg)](https://packagist.org/packages/abhi1693/yii2-app-advanced-startup-kit)
 
