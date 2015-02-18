@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7e4628fd8e4e59142a481fb5534afe1c",
+    "hash": "d5e7cb620ac188972b93e3629dac5472",
     "packages": [
         {
             "name": "abhi1693/yii2-config",
@@ -95,12 +95,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-installer.git",
-                "reference": "8033e128eedad06b1c27fc7ec77fdcc4aaf06500"
+                "reference": "c97982b26d7d8d210ca0bf006813fe07db54f349"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/8033e128eedad06b1c27fc7ec77fdcc4aaf06500",
-                "reference": "8033e128eedad06b1c27fc7ec77fdcc4aaf06500",
+                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/c97982b26d7d8d210ca0bf006813fe07db54f349",
+                "reference": "c97982b26d7d8d210ca0bf006813fe07db54f349",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,44 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-02-13 12:47:27"
+            "time": "2015-02-16 12:49:45"
+        },
+        {
+            "name": "abhi1693/yii2-system-info",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abhi1693/yii2-system-info.git",
+                "reference": "27ac154c521c02c8aee9dceb37b8f78330438996"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abhi1693/yii2-system-info/zipball/27ac154c521c02c8aee9dceb37b8f78330438996",
+                "reference": "27ac154c521c02c8aee9dceb37b8f78330438996",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "abhimanyu\\systemInfo\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abhimanyu Saharan",
+                    "email": "abhimanyu@teamvulcans.com"
+                }
+            ],
+            "description": "Information about the server",
+            "time": "2015-02-18 10:26:54"
         },
         {
             "name": "abhi1693/yii2-user",
@@ -139,12 +176,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-user.git",
-                "reference": "c3944f3a34d3f807213d24f5698b90826c943e7c"
+                "reference": "e7ab8f4abdd8080b9ea6b2ea653679e62a559a43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/c3944f3a34d3f807213d24f5698b90826c943e7c",
-                "reference": "c3944f3a34d3f807213d24f5698b90826c943e7c",
+                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/e7ab8f4abdd8080b9ea6b2ea653679e62a559a43",
+                "reference": "e7ab8f4abdd8080b9ea6b2ea653679e62a559a43",
                 "shasum": ""
             },
             "require": {
@@ -173,7 +210,24 @@
                 "user",
                 "yii"
             ],
-            "time": "2015-02-15 04:48:07"
+            "time": "2015-02-16 12:47:46"
+        },
+        {
+            "name": "bower-asset/admin-lte",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/almasaeed2010/AdminLTE.git",
+                "reference": "174be54e9b726d6a5a3f8b8756c90be821de6355"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/174be54e9b726d6a5a3f8b8756c90be821de6355",
+                "reference": "174be54e9b726d6a5a3f8b8756c90be821de6355",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "time": "2015-02-16 05:44:30"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -754,50 +808,17 @@
             "time": "2015-01-23 03:42:19"
         },
         {
-            "name": "trntv/systeminfo",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/trntv/systeminfo.git",
-                "reference": "7666c377ec41e102d856c97ab91ad51e65a6c067"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/trntv/systeminfo/zipball/7666c377ec41e102d856c97ab91ad51e65a6c067",
-                "reference": "7666c377ec41e102d856c97ab91ad51e65a6c067",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "trntv\\systeminfo\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eugene Terentev",
-                    "email": "eugene@terentev.net"
-                }
-            ],
-            "description": "Simple system information helper",
-            "time": "2015-02-03 23:51:19"
-        },
-        {
             "name": "yiisoft/yii2",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "b84eefce16dfd4580d52b4e30b6b8ec12a8f7075"
+                "reference": "3845f262337eba3be2470c74cff6e4db3b271a42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b84eefce16dfd4580d52b4e30b6b8ec12a8f7075",
-                "reference": "b84eefce16dfd4580d52b4e30b6b8ec12a8f7075",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3845f262337eba3be2470c74cff6e4db3b271a42",
+                "reference": "3845f262337eba3be2470c74cff6e4db3b271a42",
                 "shasum": ""
             },
             "require": {
@@ -873,7 +894,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-14 15:36:19"
+            "time": "2015-02-17 10:01:06"
         },
         {
             "name": "yiisoft/yii2-bootstrap",

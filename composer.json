@@ -31,10 +31,11 @@
     "abhi1693/yii2-config": "1.0.0",
     "abhi1693/yii2-enum": "1.0.0",
     "abhi1693/yii2-installer": "*",
+    "abhi1693/yii2-system-info": "*",
     "raoul2000/yii2-bootswatch-asset": "*",
     "kartik-v/yii2-widget-sidenav": "*",
-    "trntv/systeminfo": "*",
-    "bower-asset/flot": "~0.8"
+    "bower-asset/flot": "~0.8",
+    "bower-asset/admin-lte": "*"
   },
   "require-dev": {
     "yiisoft/yii2-codeception": "*",
