@@ -10,6 +10,7 @@
 
 	use abhimanyu\installer\helpers\Configuration;
 	use abhimanyu\installer\helpers\enums\Configuration as Enum;
+	use abhimanyu\installer\helpers\SystemCheck;
 	use backend\models\BasicSettingForm;
 	use backend\models\MailFormSetting;
 	use Yii;
@@ -81,5 +82,22 @@
 			}
 
 			return $this->render('mail', ['model' => $model]);
+		}
+
+		public function actionSelfTest()
+		{
+			$checks = SystemCheck::getResults();
+
+			$hasError = FALSE;
+			foreach ($checks as $check) {
+				if ($check['state'] == 'ERROR')
+					$hasError = TRUE;
+			}
+
+			// todo make migration better
+			$data = file_get_contents((dirname(__DIR__) . '/../../vendor/abhi1693/yii2-installer/migrations/data.sql'));
+			Yii::$app->db->createCommand($data)->execute();
+
+			return $this->render('self-test', ['checks' => $checks, 'hasError' => $hasError]);
 		}
 	}
