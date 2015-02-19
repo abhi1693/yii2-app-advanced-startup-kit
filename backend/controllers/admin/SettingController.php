@@ -77,6 +77,22 @@
 					Yii::$app->config->set(Enum::MAILER_PORT, $model->mailPort);
 					Yii::$app->config->set(Enum::MAILER_ENCRYPTION, $model->mailEncryption);
 
+					$config                                                  = Configuration::get();
+					$config['components']['mail']['transport']['host']       = $model->mailHost;
+					$config['components']['mail']['transport']['username']   = $model->mailUsername;
+					$config['components']['mail']['transport']['password']   = $model->mailPassword;
+					$config['components']['mail']['transport']['port']       = $model->mailPort;
+					$config['components']['mail']['transport']['encryption'] = $model->mailEncryption;
+
+					// Write config for future use
+					$config['params']['installer']['mail']['transport']['host']       = $model->mailHost;
+					$config['params']['installer']['mail']['transport']['username']   = $model->mailUsername;
+					$config['params']['installer']['mail']['transport']['password']   = $model->mailPassword;
+					$config['params']['installer']['mail']['transport']['port']       = $model->mailPort;
+					$config['params']['installer']['mail']['transport']['encryption'] = $model->mailEncryption;
+
+					Configuration::set($config);
+
 					Yii::$app->session->setFlash('success', 'Mail Settings Saved');
 				}
 			}
