@@ -67,7 +67,7 @@ php composer.phar install
 GETTING STARTED
 ---------------
 
-After you install the application, juts run `init` command without altering anything in the `environment` folder and select your environment then go to `http://yourhost/your-app/backend` and the application will help you setup everything else.
+After you install the application, just run `init` command (without altering anything in the `environment` folder) and select your environment then go to `http://yourhost/your-app/backend` and the application will help you setup everything else.
 
 TESTING
 -------
