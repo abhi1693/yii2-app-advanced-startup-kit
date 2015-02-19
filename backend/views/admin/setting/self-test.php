@@ -8,8 +8,11 @@
 
 	use yii\helpers\Html;
 
+	/** @var $this \yii\web\View */
 	/** @var $checks \abhimanyu\installer\helpers\SystemCheck */
 	/** @var $hasError \abhimanyu\installer\helpers\SystemCheck */
+
+	$this->title = 'Self Test - ' . Yii::$app->name;
 ?>
 
 <div class="panel panel-default">
