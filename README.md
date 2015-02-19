@@ -62,7 +62,9 @@ git clone https://github.com/abhi1693/yii2-app-advanced-startup-kit.git
 
 After extraction run
 
-```bash php composer.phar install```
+```bash 
+php composer.phar install
+```
 
 GETTING STARTED
 ---------------
