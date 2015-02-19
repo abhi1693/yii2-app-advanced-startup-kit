@@ -86,6 +86,23 @@
 									                'url'   => ['/admin/about'],
 									                'label' => 'About',
 									                'icon'  => 'info-sign'
+								                ],
+								                [
+									                'label' => 'Website Settings',
+									                'items' => [
+										                [
+											                'url'   => ['/admin/setting/index'],
+											                'label' => 'Basic',
+										                ],
+										                [
+											                'url'   => ['/admin/setting/mail'],
+											                'label' => 'Mail'
+										                ],
+										                [
+											                'url'   => ['/admin/setting/self-test'],
+											                'label' => 'Self Test'
+										                ]
+									                ]
 								                ]
 							                ]
 						                ]);
