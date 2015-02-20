@@ -8,11 +8,28 @@
 
 	namespace backend\controllers;
 
+	use yii\filters\AccessControl;
 	use yii\web\Controller;
 
 	class AdminController extends Controller
 	{
 		public $layout = 'admin';
+
+		public function behaviors()
+		{
+			return [
+				'access' => [
+					'class' => AccessControl::className(),
+					'rules' => [
+						[
+							'actions' => ['index', 'about'],
+							'allow'   => TRUE,
+							'roles'   => ['@'],
+						],
+					],
+				],
+			];
+		}
 
 		public function actionIndex()
 		{

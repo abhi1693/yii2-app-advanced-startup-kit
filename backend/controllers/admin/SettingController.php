@@ -14,11 +14,28 @@
 	use backend\models\BasicSettingForm;
 	use backend\models\MailFormSetting;
 	use Yii;
+	use yii\filters\AccessControl;
 	use yii\web\Controller;
 
 	class SettingController extends Controller
 	{
 		public $layout = 'admin';
+
+		public function behaviors()
+		{
+			return [
+				'access' => [
+					'class' => AccessControl::className(),
+					'rules' => [
+						[
+							'actions' => ['index', 'mail', 'self-test'],
+							'allow'   => TRUE,
+							'roles'   => ['@'],
+						],
+					],
+				],
+			];
+		}
 
 		public function actionIndex()
 		{

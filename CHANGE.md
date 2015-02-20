@@ -5,6 +5,7 @@ v0.0.2-dev
 - Added new features
 - Fixed small bugs
 - Fixed typos
+- Added AccessControl Filter
 
 v0.0.1
 ------
