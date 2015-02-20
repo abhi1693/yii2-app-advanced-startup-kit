@@ -95,12 +95,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-installer.git",
-                "reference": "cf37c0241c0a66ec39cc058cdc34a14c817283d8"
+                "reference": "a3b0b79843a9a12793fd81adbf2a0711fb1b8437"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/cf37c0241c0a66ec39cc058cdc34a14c817283d8",
-                "reference": "cf37c0241c0a66ec39cc058cdc34a14c817283d8",
+                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/a3b0b79843a9a12793fd81adbf2a0711fb1b8437",
+                "reference": "a3b0b79843a9a12793fd81adbf2a0711fb1b8437",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-02-19 18:47:58"
+            "time": "2015-02-20 04:37:44"
         },
         {
             "name": "abhi1693/yii2-system-info",
@@ -813,12 +813,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "46027786b7e199d7a17c2019f813aca6f2e280d5"
+                "reference": "ae22def7095f93698d89530dd207945320c6e89b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/46027786b7e199d7a17c2019f813aca6f2e280d5",
-                "reference": "46027786b7e199d7a17c2019f813aca6f2e280d5",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ae22def7095f93698d89530dd207945320c6e89b",
+                "reference": "ae22def7095f93698d89530dd207945320c6e89b",
                 "shasum": ""
             },
             "require": {
@@ -894,7 +894,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-19 12:44:05"
+            "time": "2015-02-20 03:46:49"
         },
         {
             "name": "yiisoft/yii2-bootstrap",

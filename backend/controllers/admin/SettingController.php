@@ -67,17 +67,25 @@
 
 		public function actionMail()
 		{
-			$model = new MailFormSetting();
+			$model                                                = new MailFormSetting();
+			$model->mailUseTransport                              = Yii::$app->config->get(Enum::MAILER_USE_TRANSPORT) === 'true' ? '1' : '0';
 
 			if ($model->load(Yii::$app->request->post())) {
 				if ($model->validate()) {
+					if ($model->mailUseTransport === '0')
+						$model->mailUseTransport = FALSE;
+					else
+						$model->mailUseTransport = TRUE;
+
 					Yii::$app->config->set(Enum::MAILER_HOST, $model->mailHost);
 					Yii::$app->config->set(Enum::MAILER_USERNAME, $model->mailUsername);
 					Yii::$app->config->set(Enum::MAILER_PASSWORD, $model->mailPassword);
 					Yii::$app->config->set(Enum::MAILER_PORT, $model->mailPort);
 					Yii::$app->config->set(Enum::MAILER_ENCRYPTION, $model->mailEncryption);
+					Yii::$app->config->set(Enum::MAILER_USE_TRANSPORT, $model->mailUseTransport ? 'true' : 'false');
 
 					$config                                                  = Configuration::get();
+					$config['components']['mail']['useTransport'] = $model->mailUseTransport;
 					$config['components']['mail']['transport']['host']       = $model->mailHost;
 					$config['components']['mail']['transport']['username']   = $model->mailUsername;
 					$config['components']['mail']['transport']['password']   = $model->mailPassword;
@@ -85,6 +93,7 @@
 					$config['components']['mail']['transport']['encryption'] = $model->mailEncryption;
 
 					// Write config for future use
+					$config['params']['installer']['mail']['UseTransport'] = $model->mailUseTransport;
 					$config['params']['installer']['mail']['transport']['host']       = $model->mailHost;
 					$config['params']['installer']['mail']['transport']['username']   = $model->mailUsername;
 					$config['params']['installer']['mail']['transport']['password']   = $model->mailPassword;

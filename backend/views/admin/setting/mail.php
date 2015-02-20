@@ -81,6 +81,12 @@
 				]) ?>
 		</div>
 
+		<div class="form-group">
+			<div class="checkbox">
+				<?= $form->field($model, 'mailUseTransport')->checkbox() ?>
+			</div>
+		</div>
+
 		<hr/>
 
 		<?= Html::submitButton('Save', ['class' => 'btn btn-primary']) ?>

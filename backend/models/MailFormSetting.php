@@ -17,6 +17,7 @@
 		public $mailPassword;
 		public $mailPort;
 		public $mailEncryption;
+		public $mailUseTransport;
 
 		public function rules()
 		{
@@ -38,18 +39,22 @@
 				['mailPort', 'integer'],
 
 				// Encryption
-				['mailEncryption', 'string', 'max' => 10]
+				['mailEncryption', 'string', 'max' => 10],
+
+				// Use Transport
+				['mailUseTransport', 'boolean']
 			];
 		}
 
 		public function attributeLabels()
 		{
 			return [
-				'mailHost'       => 'Host',
-				'mailUsername'   => 'Username',
-				'mailPassword'   => 'Password',
-				'mailPort'       => 'Port',
-				'mailEncryption' => 'Encryption'
+				'mailHost'         => 'Host',
+				'mailUsername'     => 'Username',
+				'mailPassword'     => 'Password',
+				'mailPort'         => 'Port',
+				'mailEncryption'   => 'Encryption',
+				'mailUseTransport' => 'Use Transport'
 			];
 		}
 	}
