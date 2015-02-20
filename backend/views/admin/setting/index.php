@@ -83,6 +83,16 @@
 				]) ?>
 		</div>
 
+		<hr/>
+
+		<h4>Introduction Tour</h4>
+
+		<div class="form-group">
+			<div class="checkbox">
+				<?= $form->field($model, 'appTour')->checkbox() ?>
+			</div>
+		</div>
+
 		<?= Html::submitButton('Save', ['class' => 'btn btn-primary']) ?>
 
 		<?php $form::end(); ?>

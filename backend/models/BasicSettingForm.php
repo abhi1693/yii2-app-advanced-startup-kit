@@ -16,6 +16,7 @@
 		public $appBackendTheme;
 		public $appFrontendTheme;
 		public $cacheClass;
+		public $appTour;
 
 		public function rules()
 		{
@@ -32,7 +33,10 @@
 
 				// Cache Class
 				['cacheClass', 'required'],
-				['cacheClass', 'string', 'max' => 128]
+				['cacheClass', 'string', 'max' => 128],
+
+				// Application Tour
+				['appTour', 'boolean']
 			];
 		}
 
@@ -42,7 +46,8 @@
 				'appName'          => 'Application Name',
 				'appFrontendTheme' => 'Frontend Theme',
 				'appBackendTheme'  => 'Backend Theme',
-				'cacheClass'       => 'Cache Class'
+				'cacheClass' => 'Cache Class',
+				'appTour'    => 'Show introduction tour for new users'
 			];
 		}
 	}

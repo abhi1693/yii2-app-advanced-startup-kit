@@ -22,8 +22,9 @@
 
 		public function actionIndex()
 		{
-			$model  = new BasicSettingForm();
-			$themes = SettingController::getThemes();
+			$model          = new BasicSettingForm();
+			$themes         = SettingController::getThemes();
+			$model->appTour = Yii::$app->config->get(Enum::APP_TOUR, '1');
 
 			if ($model->load(Yii::$app->request->post())) {
 				if ($model->validate()) {
@@ -31,6 +32,7 @@
 					Yii::$app->config->set(Enum::APP_BACKEND_THEME, $model->appBackendTheme);
 					Yii::$app->config->set(Enum::APP_FRONTEND_THEME, $model->appFrontendTheme);
 					Yii::$app->config->set(Enum::CACHE_CLASS, $model->cacheClass);
+					Yii::$app->config->set(Enum::APP_TOUR, $model->appTour);
 
 					$config                        = Configuration::get();
 					$config['components']['cache'] = $model->cacheClass;
