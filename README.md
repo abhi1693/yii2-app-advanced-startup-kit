@@ -98,8 +98,6 @@ In similar way you can run tests for other application tiers - `backend`, `conso
 
 You also can adjust you application suite configs and `_bootstrap.php` settings to use other urls and files, as it is can be done in `yii2-basic`.
 
-Follow the [`tests` section README](https://github.com/kartik-v/yii2-app-practical/tree/master/tests/README.md) for further details on setting up the tests.
-
 ## Dependencies
 
 - [Yii2-Config](https://github.com/abhi1693/yii2-config)
