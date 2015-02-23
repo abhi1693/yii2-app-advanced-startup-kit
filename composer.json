@@ -36,7 +36,8 @@
     "raoul2000/yii2-bootswatch-asset": "*",
     "kartik-v/yii2-widget-sidenav": "*",
     "bower-asset/flot": "~0.8",
-    "bower-asset/admin-lte": "*"
+    "bower-asset/admin-lte": "*",
+    "knplabs/packagist-api": "1.*@dev"
   },
   "require-dev": {
     "yiisoft/yii2-codeception": "*",

@@ -1,14 +1,16 @@
 <?php
-use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
-use frontend\assets\AppAsset;
-use frontend\widgets\Alert;
+	use abhimanyu\installer\helpers\enums\Configuration as Enum;
+	use frontend\assets\AppAsset;
+	use frontend\widgets\Alert;
+	use yii\bootstrap\Nav;
+	use yii\bootstrap\NavBar;
+	use yii\helpers\Html;
+	use yii\widgets\Breadcrumbs;
 
-/* @var $this \yii\web\View */
+	/* @var $this \yii\web\View */
 /* @var $content string */
 
+	raoul2000\bootswatch\BootswatchAsset::$theme = Yii::$app->config->get(Enum::APP_FRONTEND_THEME, 'readable');
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -37,16 +39,7 @@ AppAsset::register($this);
                 ['label' => 'About', 'url' => ['/site/about']],
                 ['label' => 'Contact', 'url' => ['/site/contact']],
             ];
-            if (Yii::$app->user->isGuest) {
-                $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-            } else {
-                $menuItems[] = [
-                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ];
-            }
+
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => $menuItems,
@@ -65,8 +58,10 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+	        <p class="pull-left">&copy; <?= Yii::$app->config->get(Enum::APP_NAME) ?> <?= date('Y') ?></p>
+
+	        <p class="pull-right">Maintained
+		        By <?= Html::mailto('Admin', Yii::$app->config->get(Enum::ADMIN_EMAIL)) ?></p>
         </div>
     </footer>
 
