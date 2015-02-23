@@ -39,9 +39,17 @@
 			];
 		}
 
+		public function beforeAction($action)
+		{
+			// Verifies application is installed properly
+			if (!Yii::$app->params[Enum::APP_INSTALLED]) {
+				return $this->redirect(Yii::$app->urlManager->createUrl('//installer/install/index'));
+			}
+
+			return parent::beforeAction($action);
+		}
+
 		/**
-		 * Initiates application setup
-		 *
 		 * @return string|\yii\web\Response
 		 */
 		public function actionIndex()
