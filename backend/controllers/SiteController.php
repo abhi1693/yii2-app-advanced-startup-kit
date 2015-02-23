@@ -1,6 +1,7 @@
 <?php
 	namespace backend\controllers;
 
+	use abhimanyu\installer\helpers\enums\Configuration as Enum;
 	use Yii;
 	use yii\filters\AccessControl;
 	use yii\web\Controller;
