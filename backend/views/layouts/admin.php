@@ -78,11 +78,6 @@
 									                'icon'  => 'home'
 								                ],
 								                [
-									                'url'   => ['/user/admin/index'],
-									                'label' => 'Manage User',
-									                'icon'  => 'user'
-								                ],
-								                [
 									                'url'   => ['/admin/about'],
 									                'label' => 'About',
 									                'icon'  => 'info-sign'

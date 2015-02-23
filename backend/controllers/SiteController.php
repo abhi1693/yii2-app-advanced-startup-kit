@@ -1,7 +1,6 @@
 <?php
 	namespace backend\controllers;
 
-	use abhimanyu\installer\helpers\enums\Configuration as Enum;
 	use Yii;
 	use yii\filters\AccessControl;
 	use yii\web\Controller;
@@ -26,16 +25,6 @@
 					],
 				],
 			];
-		}
-
-		public function beforeAction($action)
-		{
-			// Checks if application has been installed successfully
-			if (!Yii::$app->params[Enum::APP_INSTALLED]) {
-				return $this->redirect(Yii::$app->urlManager->createUrl('//installer/install'));
-			}
-
-			return parent::beforeAction($action);
 		}
 
 		/**

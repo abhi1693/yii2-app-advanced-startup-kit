@@ -95,12 +95,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-installer.git",
-                "reference": "a3b0b79843a9a12793fd81adbf2a0711fb1b8437"
+                "reference": "a46d32f69c569fa45198931dbfe3aa1c88b1dea0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/a3b0b79843a9a12793fd81adbf2a0711fb1b8437",
-                "reference": "a3b0b79843a9a12793fd81adbf2a0711fb1b8437",
+                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/a46d32f69c569fa45198931dbfe3aa1c88b1dea0",
+                "reference": "a46d32f69c569fa45198931dbfe3aa1c88b1dea0",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-02-20 04:37:44"
+            "time": "2015-02-22 06:02:01"
         },
         {
             "name": "abhi1693/yii2-system-info",
@@ -176,15 +176,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-user.git",
-                "reference": "e7ab8f4abdd8080b9ea6b2ea653679e62a559a43"
+                "reference": "1a76cca70624cf00183623ddfbe972fff251903c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/e7ab8f4abdd8080b9ea6b2ea653679e62a559a43",
-                "reference": "e7ab8f4abdd8080b9ea6b2ea653679e62a559a43",
+                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/1a76cca70624cf00183623ddfbe972fff251903c",
+                "reference": "1a76cca70624cf00183623ddfbe972fff251903c",
                 "shasum": ""
             },
             "require": {
+                "kartik-v/yii2-grid": "dev-master",
                 "yiisoft/yii2": "*"
             },
             "type": "yii2-extension",
@@ -210,7 +211,7 @@
                 "user",
                 "yii"
             ],
-            "time": "2015-02-16 12:47:46"
+            "time": "2015-02-21 09:36:35"
         },
         {
             "name": "bower-asset/admin-lte",
@@ -558,6 +559,50 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "kartik-v/yii2-grid",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-grid.git",
+                "reference": "78565f926eb93c3d73165849685bc491ec855158"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/78565f926eb93c3d73165849685bc491ec855158",
+                "reference": "78565f926eb93c3d73165849685bc491ec855158",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\grid\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Yii 2 GridView on steroids. Various enhancements and utilities for the Yii 2.0 GridView widget.",
+            "homepage": "https://github.com/kartik-v/yii2-grid",
+            "keywords": [
+                "extension",
+                "grid",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-02-19 09:07:00"
+        },
+        {
             "name": "kartik-v/yii2-krajee-base",
             "version": "dev-master",
             "source": {
@@ -813,12 +858,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "ae22def7095f93698d89530dd207945320c6e89b"
+                "reference": "50e9fc93c1b390d7d39019bef95c0bd8081e3826"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ae22def7095f93698d89530dd207945320c6e89b",
-                "reference": "ae22def7095f93698d89530dd207945320c6e89b",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/50e9fc93c1b390d7d39019bef95c0bd8081e3826",
+                "reference": "50e9fc93c1b390d7d39019bef95c0bd8081e3826",
                 "shasum": ""
             },
             "require": {
@@ -894,7 +939,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-20 03:46:49"
+            "time": "2015-02-22 00:45:44"
         },
         {
             "name": "yiisoft/yii2-bootstrap",

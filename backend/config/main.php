@@ -17,6 +17,9 @@
 			],
 			'installer' => [
 				'class' => \abhimanyu\installer\InstallerModule::className()
+			],
+			'gridview'  => [
+				'class' => \kartik\grid\Module::className()
 			]
 		],
 		'components'          => [
