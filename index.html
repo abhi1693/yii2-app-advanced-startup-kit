@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Yii2 Startup-kit by abhi1693</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Yii2 Startup-kit</h1>
+        <h2>Yii 2 Practical Advanced Application Template (GUI Startup Kit)</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/abhi1693/yii2-app-advanced-startup-kit/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/abhi1693/yii2-app-advanced-startup-kit/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/abhi1693/yii2-app-advanced-startup-kit" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="yii2-practical-application-advanced-template-startup-kit" class="anchor" href="#yii2-practical-application-advanced-template-startup-kit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Yii2 Practical Application Advanced Template Startup-kit</h1>
+
+<p>This is Yii2 start application template.
+It was created and developing as a fast start for building an advanced sites based on Yii2.
+It covers typical use cases for a new project and will help you not to waste your time doing the same work in every project</p>
+
+<p><strong>Note: The application is still under development. Use it at your own risk</strong></p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>FEATURES</h2>
+
+<ul>
+<li>Application Auto Installer includes:
+
+<ul>
+<li>Application Basic Setup such as Application Name, Cache type, backend/frontend theme etc.</li>
+<li>Admin Account setup</li>
+<li>Mailer Component setup</li>
+<li>Auto migrate required tables required by the the application</li>
+</ul>
+</li>
+<li>Based on yii2-advanced application template</li>
+<li>Beautiful and open source dashboard theme for backend</li>
+<li>Sign in, Sign up, profile(avatar, locale, personal data) etc</li>
+<li>OAuth authorization</li>
+<li>User management: CRUD</li>
+<li>RBAC</li>
+<li>Yii2 log web interface</li>
+<li>Application events component</li>
+<li>System information web interface</li>
+<li>many other features coming soon</li>
+</ul>
+
+<h3>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>REQUIREMENTS</h3>
+
+<p>The minimum requirement by this application template that your Web server supports PHP 5.4.0.</p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>INSTALLATION</h3>
+
+<h4>
+<a id="install-via-composer" class="anchor" href="#install-via-composer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install via Composer</h4>
+
+<p>If you do not have <a href="http://getcomposer.org/">Composer</a>, you may install it by following the instructions
+at <a href="http://getcomposer.org/doc/00-intro.md#installation-nix">getcomposer.org</a>.</p>
+
+<p>You can then install the application using the following command:</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-c1">php</span> <span class="pl-c1">composer</span><span class="pl-k">.</span><span class="pl-c1">phar</span> <span class="pl-s">global</span> <span class="pl-k">require</span> <span class="pl-s1"><span class="pl-pds">"</span>fxp/composer-asset-plugin<span class="pl-pds">"</span></span></span>
+<span class="pl-s2"><span class="pl-c1">php</span> <span class="pl-c1">composer</span><span class="pl-k">.</span><span class="pl-c1">phar</span> <span class="pl-c1">create</span><span class="pl-k">-</span><span class="pl-c1">project</span> <span class="pl-k">--</span><span class="pl-c1">prefer</span><span class="pl-k">-</span><span class="pl-c1">dist</span> <span class="pl-k">--</span><span class="pl-c1">stability</span><span class="pl-k">=</span><span class="pl-c1">dev</span> <span class="pl-c1">abhi1693</span><span class="pl-k">/</span><span class="pl-c1">yii2</span><span class="pl-k">-</span><span class="pl-c1">app</span><span class="pl-k">-</span><span class="pl-c1">advanced</span><span class="pl-k">-</span><span class="pl-c1">startup</span><span class="pl-k">-</span><span class="pl-c1">kit</span> <span class="pl-c1">demo</span><span class="pl-k">-</span><span class="pl-c1">app</span></span></pre></div>
+
+<h4>
+<a id="install-from-github" class="anchor" href="#install-from-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install from GitHub</h4>
+
+<p>Extract the github archive file or clone this repository.</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-c1">git</span> <span class="pl-st">clone</span> <span class="pl-c1">https</span>:<span class="pl-c">//github.com/abhi1693/yii2-app-advanced-startup-kit.git</span></span></pre></div>
+
+<p>After extraction run</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-c1">php</span> <span class="pl-c1">composer</span><span class="pl-k">.</span><span class="pl-c1">phar</span> <span class="pl-c1">install</span></span></pre></div>
+
+<h3>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>GETTING STARTED</h3>
+
+<p>After you install the application, just run <code>init</code> command (without altering anything in the <code>environment</code> folder) and select your environment then go to <code>http://yourhost/your-app/backend</code> and the application will help you setup everything else.</p>
+
+<h3>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>TESTING</h3>
+
+<p>Install additional composer packages:</p>
+
+<ul>
+<li><code>php composer.phar require --dev "codeception/codeception: 1.8.*@dev" "codeception/specify: *" "codeception/verify: *"</code></li>
+</ul>
+
+<p>This application boilerplate use database in testing, so you should create three databases that are used in tests:</p>
+
+<ul>
+<li>
+<code>yii2_practical_unit</code> - database for unit tests;</li>
+<li>
+<code>yii2_practical_functional</code> - database for functional tests;</li>
+<li>
+<code>yii2_practical_acceptance</code> - database for acceptance tests.</li>
+</ul>
+
+<p>To make your database up to date, you can run in needed test folder <code>yii migrate</code>, for example
+if you are starting from <code>frontend</code> tests then you should run <code>yii migrate</code> in each suite folder <code>acceptance</code>, <code>functional</code>, <code>unit</code>
+it will upgrade your database to the last state according migrations.</p>
+
+<p>To be able to run acceptance tests you need a running webserver. For this you can use the php builtin server and run it in the directory where your main project folder is located. For example if your application is located in <code>/www/practical</code> all you need to is:
+<code>cd /www</code> and then <code>php -S 127.0.0.1:8080</code> because the default configuration of acceptance tests expects the url of the application to be <code>/practical/</code>.
+If you already have a server configured or your application is not located in a folder called <code>practical</code>, you may need to adjust the <code>TEST_ENTRY_URL</code> in <code>frontend/tests/_bootstrap.php</code> and <code>backend/tests/_bootstrap.php</code>.</p>
+
+<p>After that is done you should be able to run your tests, for example to run <code>frontend</code> tests do:</p>
+
+<ul>
+<li><code>cd frontend</code></li>
+<li><code>../vendor/bin/codecept build</code></li>
+<li><code>../vendor/bin/codecept run</code></li>
+</ul>
+
+<p>In similar way you can run tests for other application tiers - <code>backend</code>, <code>console</code>, <code>common</code>.</p>
+
+<p>You also can adjust you application suite configs and <code>_bootstrap.php</code> settings to use other urls and files, as it is can be done in <code>yii2-basic</code>.</p>
+
+<p>Follow the <a href="https://github.com/kartik-v/yii2-app-practical/tree/master/tests/README.md"><code>tests</code> section README</a> for further details on setting up the tests.</p>
+
+<h3>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h3>
+
+<ul>
+<li><a href="https://github.com/abhi1693/yii2-config">Yii2-Config</a></li>
+<li><a href="https://github.com/abhi1693/yii2-enum">Yii2-Enum</a></li>
+<li><a href="https://github.com/abhi1693/yii2-user">Yii2-User</a></li>
+<li><a href="https://github.com/abhi1693/yii2-installer">Yii2-Installer</a></li>
+<li><a href="https://github.com/abhi1693/yii2-system-info">Yii2-System-Info</a></li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
