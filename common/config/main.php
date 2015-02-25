@@ -3,7 +3,8 @@
 		'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
 		'modules'    => [
 			'user'      => [
-				'class' => \abhimanyu\user\UserModule::className()
+				'class'  => \abhimanyu\user\UserModule::className(),
+				'layout' => '@backend/views/layouts/admin'
 			],
 			'installer' => [
 				'class' => \abhimanyu\installer\InstallerModule::className()
