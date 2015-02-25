@@ -6,6 +6,7 @@ v0.0.2-dev
 - Fixed small bugs
 - Fixed typos
 - Added AccessControl Filter
+- Moved settings to common/main.php
 
 v0.0.1
 ------
