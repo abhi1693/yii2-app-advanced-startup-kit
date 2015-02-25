@@ -15,11 +15,61 @@
 	use backend\models\MailFormSetting;
 	use Yii;
 	use yii\filters\AccessControl;
+	use yii\helpers\ArrayHelper;
 	use yii\web\Controller;
 
 	class SettingController extends Controller
 	{
 		public $layout = 'admin';
+
+		public static function getMenuItems()
+		{
+			$menuItems[]     = NULL;
+			$menuItemPresets = [
+				'user' => ['label' => 'Users', 'url' => ['/user/admin'], 'icon' => 'user'],
+			];
+			$autoMenuItems   = [
+				[
+					'url'   => ['/admin/index'],
+					'label' => 'Home',
+					'icon'  => 'home'
+				],
+				[
+					'url'   => ['/admin/about'],
+					'label' => 'About',
+					'icon'  => 'info-sign'
+				],
+				[
+					'label' => 'Website Settings',
+					'items' => [
+						[
+							'url'   => ['/admin/setting/index'],
+							'label' => 'Basic',
+						],
+						[
+							'url'   => ['/admin/setting/mail'],
+							'label' => 'Mail'
+						],
+						[
+							'url'   => ['/admin/setting/self-test'],
+							'label' => 'Self Test'
+						]
+					]
+				]
+			];
+
+			foreach (Yii::$app->getModules() as $name => $m) {
+				switch ($name) {
+					case 'user':
+						$menuItems[] = $menuItemPresets[$name];
+						break;
+				}
+			}
+
+			$menuItems = ArrayHelper::merge($autoMenuItems, $menuItems);
+
+			return $menuItems;
+		}
 
 		public function behaviors()
 		{

@@ -71,35 +71,7 @@
 						SideNav::widget([
 							                'type'    => SideNav::TYPE_DEFAULT,
 							                'heading' => '<i class="glyphicon glyphicon-tasks"></i> Manage',
-							                'items'   => [
-								                [
-									                'url'   => ['/admin/index'],
-									                'label' => 'Home',
-									                'icon'  => 'home'
-								                ],
-								                [
-									                'url'   => ['/admin/about'],
-									                'label' => 'About',
-									                'icon'  => 'info-sign'
-								                ],
-								                [
-									                'label' => 'Website Settings',
-									                'items' => [
-										                [
-											                'url'   => ['/admin/setting/index'],
-											                'label' => 'Basic',
-										                ],
-										                [
-											                'url'   => ['/admin/setting/mail'],
-											                'label' => 'Mail'
-										                ],
-										                [
-											                'url'   => ['/admin/setting/self-test'],
-											                'label' => 'Self Test'
-										                ]
-									                ]
-								                ]
-							                ]
+							                'items' => \backend\controllers\admin\SettingController::getMenuItems()
 						                ]);
 					?>
 				</div>
