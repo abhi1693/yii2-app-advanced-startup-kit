@@ -13,6 +13,10 @@
 			]
 		],
 		'components' => [
+			'db'   => [
+				'class' => \yii\db\Connection::className(),
+				'dsn'   => 'mysql:host=localhost;dbname='
+			],
 			'user' => [
 				'identityClass' => \abhimanyu\user\models\UserIdentity::className(),
 				'loginUrl'      => ['/user/auth/login'],
@@ -25,4 +29,7 @@
 				'showScriptName'  => FALSE,
 			]
 		],
+		'params'     => [
+			'installed' => FALSE
+		]
 	];
