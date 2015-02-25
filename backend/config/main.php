@@ -11,22 +11,7 @@
 		'basePath'            => dirname(__DIR__),
 		'controllerNamespace' => 'backend\controllers',
 		'bootstrap'           => ['log'],
-		'modules'             => [
-			'user'      => [
-				'class' => \abhimanyu\user\UserModule::className()
-			],
-			'installer' => [
-				'class' => \abhimanyu\installer\InstallerModule::className()
-			],
-			'gridview'  => [
-				'class' => \kartik\grid\Module::className()
-			]
-		],
 		'components'          => [
-			'user'         => [
-				'identityClass' => \abhimanyu\user\models\UserIdentity::className(),
-				'loginUrl'      => ['/user/auth/login'],
-			],
 			'log'          => [
 				'traceLevel' => YII_DEBUG ? 3 : 0,
 				'targets'    => [
