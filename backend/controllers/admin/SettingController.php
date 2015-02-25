@@ -24,7 +24,7 @@
 
 		public static function getMenuItems()
 		{
-			$menuItems[]     = NULL;
+			$menuItems = NULL;
 			$menuItemPresets = [
 				'user' => ['label' => 'Users', 'url' => ['/user/admin'], 'icon' => 'user'],
 			];
