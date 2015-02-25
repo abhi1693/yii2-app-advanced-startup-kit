@@ -62,43 +62,43 @@ It covers typical use cases for a new project and will help you not to waste you
 <li>many other features coming soon</li>
 </ul>
 
-<h3>
-<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>REQUIREMENTS</h3>
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>REQUIREMENTS</h2>
 
 <p>The minimum requirement by this application template that your Web server supports PHP 5.4.0.</p>
 
-<h3>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>INSTALLATION</h3>
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>INSTALLATION</h2>
 
-<h4>
-<a id="install-via-composer" class="anchor" href="#install-via-composer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install via Composer</h4>
+<h3>
+<a id="install-via-composer" class="anchor" href="#install-via-composer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install via Composer</h3>
 
 <p>If you do not have <a href="http://getcomposer.org/">Composer</a>, you may install it by following the instructions
 at <a href="http://getcomposer.org/doc/00-intro.md#installation-nix">getcomposer.org</a>.</p>
 
 <p>You can then install the application using the following command:</p>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-c1">php</span> <span class="pl-c1">composer</span><span class="pl-k">.</span><span class="pl-c1">phar</span> <span class="pl-s">global</span> <span class="pl-k">require</span> <span class="pl-s1"><span class="pl-pds">"</span>fxp/composer-asset-plugin<span class="pl-pds">"</span></span></span>
-<span class="pl-s2"><span class="pl-c1">php</span> <span class="pl-c1">composer</span><span class="pl-k">.</span><span class="pl-c1">phar</span> <span class="pl-c1">create</span><span class="pl-k">-</span><span class="pl-c1">project</span> <span class="pl-k">--</span><span class="pl-c1">prefer</span><span class="pl-k">-</span><span class="pl-c1">dist</span> <span class="pl-k">--</span><span class="pl-c1">stability</span><span class="pl-k">=</span><span class="pl-c1">dev</span> <span class="pl-c1">abhi1693</span><span class="pl-k">/</span><span class="pl-c1">yii2</span><span class="pl-k">-</span><span class="pl-c1">app</span><span class="pl-k">-</span><span class="pl-c1">advanced</span><span class="pl-k">-</span><span class="pl-c1">startup</span><span class="pl-k">-</span><span class="pl-c1">kit</span> <span class="pl-c1">demo</span><span class="pl-k">-</span><span class="pl-c1">app</span></span></pre></div>
+<div class="highlight highlight-bash"><pre>composer global require <span class="pl-s1"><span class="pl-pds">"</span>fxp/composer-asset-plugin:1.0.0<span class="pl-pds">"</span></span>
+composer create-project --prefer-dist --stability=dev abhi1693/yii2-app-advanced-startup-kit demo-app</pre></div>
 
-<h4>
-<a id="install-from-github" class="anchor" href="#install-from-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install from GitHub</h4>
+<h3>
+<a id="install-from-github" class="anchor" href="#install-from-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install from GitHub</h3>
 
 <p>Extract the github archive file or clone this repository.</p>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-c1">git</span> <span class="pl-st">clone</span> <span class="pl-c1">https</span>:<span class="pl-c">//github.com/abhi1693/yii2-app-advanced-startup-kit.git</span></span></pre></div>
+<div class="highlight highlight-bash"><pre>git clone https://github.com/abhi1693/yii2-app-advanced-startup-kit.git</pre></div>
 
 <p>After extraction run</p>
 
-<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-c1">php</span> <span class="pl-c1">composer</span><span class="pl-k">.</span><span class="pl-c1">phar</span> <span class="pl-c1">install</span></span></pre></div>
+<div class="highlight highlight-bash"><pre>php composer.phar install</pre></div>
 
-<h3>
-<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>GETTING STARTED</h3>
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>GETTING STARTED</h2>
 
 <p>After you install the application, just run <code>init</code> command (without altering anything in the <code>environment</code> folder) and select your environment then go to <code>http://yourhost/your-app/backend</code> and the application will help you setup everything else.</p>
 
-<h3>
-<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>TESTING</h3>
+<h2>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>TESTING</h2>
 
 <p>Install additional composer packages:</p>
 
@@ -137,8 +137,8 @@ If you already have a server configured or your application is not located in a 
 
 <p>You also can adjust you application suite configs and <code>_bootstrap.php</code> settings to use other urls and files, as it is can be done in <code>yii2-basic</code>.</p>
 
-<h3>
-<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h3>
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h2>
 
 <ul>
 <li><a href="https://github.com/abhi1693/yii2-config">Yii2-Config</a></li>
@@ -148,21 +148,8 @@ If you already have a server configured or your application is not located in a 
 <li><a href="https://github.com/abhi1693/yii2-system-info">Yii2-System-Info</a></li>
 </ul>
       </section>
-
-<h3>
-<a id="donate" class="anchor" href="#donate" aria-hidden="true"><span class="octicon octicon-link"></span></a>Donate</h3>
-
-<p>Money from the donations will be used to make this project into something big...</p>
-<p>Sorry, for the confusion guys but that's a <strong>DONATE</strong> button. Paypal messed up. :P </p>
-
-      
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="NFWA9TEGKGHWE">
-<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-</form>
     </div>
 
+    
   </body>
 </html>
