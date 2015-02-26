@@ -7,6 +7,7 @@
 	 */
 
 	use abhimanyu\installer\helpers\enums\Configuration as Enum;
+	use kartik\alert\AlertBlock;
 	use yii\caching\DbCache;
 	use yii\caching\FileCache;
 	use yii\helpers\Html;
@@ -17,15 +18,17 @@
 	/** @var $themes */
 
 	$this->title = 'Basic Settings - ' . Yii::$app->name;
+
+	echo AlertBlock::widget([
+		                        'delay'           => 5000,
+		                        'useSessionFlash' => TRUE
+	                        ]);
 ?>
 
 <div class="panel panel-default">
 	<div class="panel-heading">Basic Settings</div>
 
 	<div class="panel-body">
-
-		<?= $this->render('/alert') ?>
-
 		<?php $form = ActiveForm::begin([
 			                                'id'                   => 'basic-setting-form',
 			                                'enableAjaxValidation' => FALSE,

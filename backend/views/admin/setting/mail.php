@@ -7,6 +7,7 @@
 	 */
 
 	use abhimanyu\installer\helpers\enums\Configuration as Enum;
+	use kartik\alert\AlertBlock;
 	use yii\helpers\Html;
 	use yii\widgets\ActiveForm;
 
@@ -14,6 +15,11 @@
 	/** @var $model \backend\models\MailFormSetting */
 
 	$this->title = 'Mail Settings - ' . Yii::$app->name;
+
+	echo AlertBlock::widget([
+		                        'delay'           => 5000,
+		                        'useSessionFlash' => TRUE
+	                        ]);
 ?>
 
 <div class="panel panel-default">
@@ -24,8 +30,6 @@
 			                                'id'                   => 'mail-form',
 			                                'enableAjaxValidation' => FALSE
 		                                ]); ?>
-
-		<?= $this->render('/alert') ?>
 
 		<div class="form-group">
 			<?= $form->field($model, 'mailHost')->textInput([

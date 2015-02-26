@@ -6,15 +6,19 @@
 	 * Time: 23:39
 	 */
 
+	use kartik\alert\AlertBlock;
 	use yii\widgets\ActiveForm;
 
 	/** @var $this \yii\web\View */
 	/** @var $model \backend\models\DatabaseSettingForm */
 
 	$this->title = 'Database Settings - ' . Yii::$app->name;
-?>
 
-<?= $this->render('/alert') ?>
+	echo AlertBlock::widget([
+		                        'delay'           => 5000,
+		                        'useSessionFlash' => TRUE
+	                        ]);
+?>
 
 <div id="database-form" class="panel panel-default">
 	<div class="panel-heading">Database Setting</div>

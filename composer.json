@@ -35,7 +35,8 @@
     "abhi1693/yii2-system-info": "*",
     "raoul2000/yii2-bootswatch-asset": "*",
     "kartik-v/yii2-widget-sidenav": "*",
-    "bower-asset/admin-lte": "*"
+    "bower-asset/admin-lte": "*",
+    "kartik-v/yii2-widget-alert": "*"
   },
   "require-dev": {
     "yiisoft/yii2-codeception": "*",
