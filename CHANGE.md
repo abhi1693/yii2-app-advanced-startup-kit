@@ -3,6 +3,7 @@ v0.0.3-dev
 **Date:** 2015-02-25
 
 - Added Menu Helper to backend
+- Added Database Settings to admin panel
 
 v0.0.2
 ------
