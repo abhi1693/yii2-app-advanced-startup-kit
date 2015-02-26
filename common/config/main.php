@@ -23,7 +23,7 @@
 				'loginUrl'      => ['/user/auth/login'],
 			],
 			'config'     => [
-				'class' => \abhimanyu\config\components\Config::className()
+				'class' => \abhimanyu\config\components\Config::className(),
 			],
 			'urlManager' => [
 				'enablePrettyUrl' => TRUE,

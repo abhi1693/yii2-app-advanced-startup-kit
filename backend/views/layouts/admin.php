@@ -66,15 +66,17 @@
 				                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 			                        ]) ?>
 			<div class="row">
-				<div class="col-md-2">
-					<?=
-						SideNav::widget([
-							                'type'    => SideNav::TYPE_DEFAULT,
-							                'heading' => '<i class="glyphicon glyphicon-tasks"></i> Manage',
-							                'items' => \backend\controllers\admin\SettingController::getMenuItems()
-						                ]);
-					?>
-				</div>
+				<?php if (!Yii::$app->user->isGuest) { ?>
+					<div class="col-md-2">
+						<?=
+							SideNav::widget([
+								                'type'    => SideNav::TYPE_DEFAULT,
+								                'heading' => '<i class="glyphicon glyphicon-tasks"></i> Manage',
+								                'items'   => \backend\controllers\admin\SettingController::getMenuItems()
+							                ]);
+						?>
+					</div>
+				<?php } ?>
 
 				<div class="col-md-9">
 					<?= $content ?>

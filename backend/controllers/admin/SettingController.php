@@ -11,9 +11,13 @@
 	use abhimanyu\installer\helpers\Configuration;
 	use abhimanyu\installer\helpers\enums\Configuration as Enum;
 	use abhimanyu\installer\helpers\SystemCheck;
+	use abhimanyu\installer\InstallerModule;
 	use backend\models\BasicSettingForm;
+	use backend\models\DatabaseSettingForm;
 	use backend\models\MailFormSetting;
 	use Yii;
+	use yii\db\Connection;
+	use yii\db\Exception;
 	use yii\filters\AccessControl;
 	use yii\helpers\ArrayHelper;
 	use yii\web\Controller;
@@ -24,7 +28,7 @@
 
 		public static function getMenuItems()
 		{
-			$menuItems = NULL;
+			$menuItems       = NULL;
 			$menuItemPresets = [
 				'user' => ['label' => 'Users', 'url' => ['/user/admin'], 'icon' => 'user'],
 			];
@@ -41,10 +45,15 @@
 				],
 				[
 					'label' => 'Website Settings',
+					'icon'  => 'cog',
 					'items' => [
 						[
 							'url'   => ['/admin/setting/index'],
 							'label' => 'Basic',
+						],
+						[
+							'url'   => ['/admin/setting/database'],
+							'label' => 'Database'
 						],
 						[
 							'url'   => ['/admin/setting/mail'],
@@ -66,7 +75,10 @@
 				}
 			}
 
-			$menuItems = ArrayHelper::merge($autoMenuItems, $menuItems);
+			if (Yii::$app->user->isGuest)
+				$menuItems = [];
+			else
+				$menuItems = ArrayHelper::merge($autoMenuItems, $menuItems);
 
 			return $menuItems;
 		}
@@ -78,7 +90,7 @@
 					'class' => AccessControl::className(),
 					'rules' => [
 						[
-							'actions' => ['index', 'mail', 'self-test'],
+							'actions' => ['index', 'database', 'mail', 'self-test'],
 							'allow'   => TRUE,
 							'roles'   => ['@'],
 						],
@@ -132,6 +144,63 @@
 				'united'    => 'United',
 				'yeti'      => 'Yeti'
 			];
+		}
+
+		public function actionDatabase()
+		{
+			$config = Configuration::get();
+			$form   = new DatabaseSettingForm();
+
+			if ($form->load(Yii::$app->request->post())) {
+				if ($form->validate()) {
+					$dsn = "mysql:host=" . $form->hostname . ";dbname=" . $form->database;
+					// Create Test DB Connection
+					Yii::$app->set('db', [
+						'class'    => Connection::className(),
+						'dsn'      => $dsn,
+						'username' => $form->username,
+						'password' => $form->password,
+						'charset'  => 'utf8'
+					]);
+
+					try {
+						Yii::$app->db->open();
+						// Check DB Connection
+						if (InstallerModule::checkDbConnection()) {
+							// Write Config
+							$config['components']['db']['class']    = Connection::className();
+							$config['components']['db']['dsn']      = $dsn;
+							$config['components']['db']['username'] = $form->username;
+							$config['components']['db']['password'] = $form->password;
+							$config['components']['db']['charset']  = 'utf8';
+
+							// Write config for future use
+							$config['params']['installer']['db']['installer_hostname'] = $form->hostname;
+							$config['params']['installer']['db']['installer_database'] = $form->database;
+							$config['params']['installer']['db']['installer_username'] = $form->username;
+
+							Configuration::set($config);
+
+							Yii::$app->getSession()->setFlash('success', 'Database settings saved');
+						} else {
+							Yii::$app->getSession()->setFlash('danger', 'Incorrect configuration');
+						}
+					} catch (Exception $e) {
+						Yii::$app->getSession()->setFlash('danger', $e->getMessage());
+					}
+				}
+			} else {
+				if (isset($config['params']['installer']['db']['installer_hostname']))
+					$form->hostname = $config['params']['installer']['db']['installer_hostname'];
+
+				if (isset($config['params']['installer']['db']['installer_database']))
+					$form->database = $config['params']['installer']['db']['installer_database'];
+
+				if (isset($config['params']['installer']['db']['installer_username']))
+					$form->username = $config['params']['installer']['db']['installer_username'];
+			}
+
+			return $this->render('database', ['model' => $form]);
 		}
 
 		public function actionMail()

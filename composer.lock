@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "12ee0ba5bf56a478cb79f3b551910099",
+    "hash": "2bbffe1585c599f737c46ebc94a7fad0",
     "packages": [
         {
             "name": "abhi1693/yii2-config",
@@ -178,12 +178,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-user.git",
-                "reference": "1a76cca70624cf00183623ddfbe972fff251903c"
+                "reference": "67f74f8be89eb74aad469b72d09a6caf1e460a1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/1a76cca70624cf00183623ddfbe972fff251903c",
-                "reference": "1a76cca70624cf00183623ddfbe972fff251903c",
+                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/67f74f8be89eb74aad469b72d09a6caf1e460a1b",
+                "reference": "67f74f8be89eb74aad469b72d09a6caf1e460a1b",
                 "shasum": ""
             },
             "require": {
@@ -213,7 +213,7 @@
                 "user",
                 "yii"
             ],
-            "time": "2015-02-21 09:36:35"
+            "time": "2015-02-26 17:38:45"
         },
         {
             "name": "bower-asset/admin-lte",
@@ -504,73 +504,6 @@
             "time": "2014-12-18 00:45:32"
         },
         {
-            "name": "doctrine/inflector",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/inflector.git",
-                "reference": "e5eaf8c7ded0877195b5d2848491e17b1c0a6c4d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/e5eaf8c7ded0877195b5d2848491e17b1c0a6c4d",
-                "reference": "e5eaf8c7ded0877195b5d2848491e17b1c0a6c4d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Inflector\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
-            ],
-            "description": "Common String Manipulations with regard to casing and singular/plural rules.",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "inflection",
-                "pluralize",
-                "singularize",
-                "string"
-            ],
-            "time": "2015-01-01 18:34:57"
-        },
-        {
             "name": "ezyang/htmlpurifier",
             "version": "v4.6.0",
             "source": {
@@ -615,109 +548,17 @@
             "time": "2013-11-30 08:25:19"
         },
         {
-            "name": "guzzle/guzzle",
-            "version": "v3.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
-                "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": ">=5.3.3",
-                "symfony/event-dispatcher": ">=2.1"
-            },
-            "replace": {
-                "guzzle/batch": "self.version",
-                "guzzle/cache": "self.version",
-                "guzzle/common": "self.version",
-                "guzzle/http": "self.version",
-                "guzzle/inflection": "self.version",
-                "guzzle/iterator": "self.version",
-                "guzzle/log": "self.version",
-                "guzzle/parser": "self.version",
-                "guzzle/plugin": "self.version",
-                "guzzle/plugin-async": "self.version",
-                "guzzle/plugin-backoff": "self.version",
-                "guzzle/plugin-cache": "self.version",
-                "guzzle/plugin-cookie": "self.version",
-                "guzzle/plugin-curlauth": "self.version",
-                "guzzle/plugin-error-response": "self.version",
-                "guzzle/plugin-history": "self.version",
-                "guzzle/plugin-log": "self.version",
-                "guzzle/plugin-md5": "self.version",
-                "guzzle/plugin-mock": "self.version",
-                "guzzle/plugin-oauth": "self.version",
-                "guzzle/service": "self.version",
-                "guzzle/stream": "self.version"
-            },
-            "require-dev": {
-                "doctrine/cache": "*",
-                "monolog/monolog": "1.*",
-                "phpunit/phpunit": "3.7.*",
-                "psr/log": "1.0.*",
-                "symfony/class-loader": "*",
-                "zendframework/zend-cache": "<2.3",
-                "zendframework/zend-log": "<2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.8-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle": "src/",
-                    "Guzzle\\Tests": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "Guzzle Community",
-                    "homepage": "https://github.com/guzzle/guzzle/contributors"
-                }
-            ],
-            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "client",
-                "curl",
-                "framework",
-                "http",
-                "http client",
-                "rest",
-                "web service"
-            ],
-            "time": "2014-01-28 22:29:15"
-        },
-        {
             "name": "kartik-v/yii2-grid",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-grid.git",
-                "reference": "c12dfe2601e403be634c1f941b8d0ea9cb1a20d3"
+                "reference": "cc22f718f1f2c582d0bfed6bbbb79adada898b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/c12dfe2601e403be634c1f941b8d0ea9cb1a20d3",
-                "reference": "c12dfe2601e403be634c1f941b8d0ea9cb1a20d3",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/cc22f718f1f2c582d0bfed6bbbb79adada898b01",
+                "reference": "cc22f718f1f2c582d0bfed6bbbb79adada898b01",
                 "shasum": ""
             },
             "require": {
@@ -748,7 +589,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-02-24 17:15:28"
+            "time": "2015-02-25 19:23:08"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -756,12 +597,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "01e9fa8c19970070d0aba5b16a7bfd8c241bc7f9"
+                "reference": "62fa801f1c429f224a656fd3e5025b8bae282f03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/01e9fa8c19970070d0aba5b16a7bfd8c241bc7f9",
-                "reference": "01e9fa8c19970070d0aba5b16a7bfd8c241bc7f9",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/62fa801f1c429f224a656fd3e5025b8bae282f03",
+                "reference": "62fa801f1c429f224a656fd3e5025b8bae282f03",
                 "shasum": ""
             },
             "require": {
@@ -794,7 +635,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-02-13 03:36:35"
+            "time": "2015-02-26 14:31:18"
         },
         {
             "name": "kartik-v/yii2-widget-sidenav",
@@ -802,12 +643,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-sidenav.git",
-                "reference": "371bb89c3e58e1d346c37b9c1f67c3e42536f8f5"
+                "reference": "33063d5542a82a1b89e6e4ab838796fb742b98df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-sidenav/zipball/371bb89c3e58e1d346c37b9c1f67c3e42536f8f5",
-                "reference": "371bb89c3e58e1d346c37b9c1f67c3e42536f8f5",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-sidenav/zipball/33063d5542a82a1b89e6e4ab838796fb742b98df",
+                "reference": "33063d5542a82a1b89e6e4ab838796fb742b98df",
                 "shasum": ""
             },
             "require": {
@@ -843,60 +684,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-09 18:27:43"
-        },
-        {
-            "name": "knplabs/packagist-api",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/KnpLabs/packagist-api.git",
-                "reference": "0d87e2084c9ea528c921d4136e3c44d919d243f0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/packagist-api/zipball/0d87e2084c9ea528c921d4136e3c44d919d243f0",
-                "reference": "0d87e2084c9ea528c921d4136e3c44d919d243f0",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/inflector": "~1.0",
-                "guzzle/http": "~3.0",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpspec/php-diff": "*@dev",
-                "phpspec/phpspec": "~2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Packagist\\Api\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "KnpLabs Team",
-                    "homepage": "http://knplabs.com"
-                }
-            ],
-            "description": "Packagist API client.",
-            "homepage": "http://knplabs.com",
-            "keywords": [
-                "api",
-                "composer",
-                "packagist"
-            ],
-            "time": "2015-01-30 10:52:56"
+            "time": "2015-02-26 16:23:57"
         },
         {
             "name": "raoul2000/yii2-bootswatch-asset",
@@ -996,65 +784,6 @@
             "time": "2015-01-18 13:49:36"
         },
         {
-            "name": "symfony/event-dispatcher",
-            "version": "dev-master",
-            "target-dir": "Symfony/Component/EventDispatcher",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "b715478e00418f52557f271d1fcee0a3edf6e19c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/b715478e00418f52557f271d1fcee0a3edf6e19c",
-                "reference": "b715478e00418f52557f271d1fcee0a3edf6e19c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "~2.7|~3.0",
-                "symfony/dependency-injection": "~2.7|~3.0",
-                "symfony/expression-language": "~2.7|~3.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0",
-                "symfony/stopwatch": "~2.7|~3.0"
-            },
-            "suggest": {
-                "symfony/dependency-injection": "",
-                "symfony/http-kernel": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\EventDispatcher\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony EventDispatcher Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-02-21 13:23:59"
-        },
-        {
             "name": "thomaspark/bootswatch",
             "version": "v3.3.2",
             "source": {
@@ -1118,12 +847,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "534d12587dd092ca4b13cd20bfab1d21b3450153"
+                "reference": "cc806a894f1a3c39e4cea1739d41fa80a81e3129"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/534d12587dd092ca4b13cd20bfab1d21b3450153",
-                "reference": "534d12587dd092ca4b13cd20bfab1d21b3450153",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/cc806a894f1a3c39e4cea1739d41fa80a81e3129",
+                "reference": "cc806a894f1a3c39e4cea1739d41fa80a81e3129",
                 "shasum": ""
             },
             "require": {
@@ -1198,7 +927,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-25 10:31:31"
+            "time": "2015-02-26 10:02:21"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1206,17 +935,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "8310e2245b9314e1d481931aaa8e15448e1d7249"
+                "reference": "2ce0254cc3860d65ca5d6a2d6c22e575ee812c2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/8310e2245b9314e1d481931aaa8e15448e1d7249",
-                "reference": "8310e2245b9314e1d481931aaa8e15448e1d7249",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/2ce0254cc3860d65ca5d6a2d6c22e575ee812c2a",
+                "reference": "2ce0254cc3860d65ca5d6a2d6c22e575ee812c2a",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-                "yiisoft/yii2": "*"
+                "yiisoft/yii2": "~2.0.0"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1244,7 +973,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-02-24 19:58:47"
+            "time": "2015-02-26 10:03:31"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -1299,17 +1028,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-                "reference": "cc1a360915e3795589d4475a9b9c276a916c0451"
+                "reference": "c3becc8341a9a6eaf0aab22cdcd85bb853272774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/cc1a360915e3795589d4475a9b9c276a916c0451",
-                "reference": "cc1a360915e3795589d4475a9b9c276a916c0451",
+                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/c3becc8341a9a6eaf0aab22cdcd85bb853272774",
+                "reference": "c3becc8341a9a6eaf0aab22cdcd85bb853272774",
                 "shasum": ""
             },
             "require": {
                 "swiftmailer/swiftmailer": "*",
-                "yiisoft/yii2": "*"
+                "yiisoft/yii2": "~2.0.0"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1341,7 +1070,7 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "time": "2015-02-22 20:59:30"
+            "time": "2015-02-26 10:03:31"
         }
     ],
     "packages-dev": [
@@ -1464,16 +1193,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-codeception.git",
-                "reference": "c483e1bf015b623a6aa69d294ea3aa3c8b2604eb"
+                "reference": "12a2cb182a8601ceb5e6440c8ad7d6e291834f61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/c483e1bf015b623a6aa69d294ea3aa3c8b2604eb",
-                "reference": "c483e1bf015b623a6aa69d294ea3aa3c8b2604eb",
+                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/12a2cb182a8601ceb5e6440c8ad7d6e291834f61",
+                "reference": "12a2cb182a8601ceb5e6440c8ad7d6e291834f61",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2": "*"
+                "yiisoft/yii2": "~2.0.0"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1501,7 +1230,7 @@
                 "codeception",
                 "yii2"
             ],
-            "time": "2015-02-22 20:59:30"
+            "time": "2015-02-26 10:03:31"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -1509,17 +1238,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "0382c72f9d2eac573d76caf4320d94809e4c6d00"
+                "reference": "8aa266ab08b51ef61b4786ec735a4e1697c15eed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/0382c72f9d2eac573d76caf4320d94809e4c6d00",
-                "reference": "0382c72f9d2eac573d76caf4320d94809e4c6d00",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/8aa266ab08b51ef61b4786ec735a4e1697c15eed",
+                "reference": "8aa266ab08b51ef61b4786ec735a4e1697c15eed",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2": "*",
-                "yiisoft/yii2-bootstrap": "*"
+                "yiisoft/yii2": "~2.0.0",
+                "yiisoft/yii2-bootstrap": "~2.0.0"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1548,7 +1277,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2015-02-22 20:59:30"
+            "time": "2015-02-26 10:03:31"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -1556,17 +1285,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-faker.git",
-                "reference": "8e60be38bf79d365d1298efb458db4bb5df6f135"
+                "reference": "af4f1f4d2ba5357339ce3bc2b985512816c3e3db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/8e60be38bf79d365d1298efb458db4bb5df6f135",
-                "reference": "8e60be38bf79d365d1298efb458db4bb5df6f135",
+                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/af4f1f4d2ba5357339ce3bc2b985512816c3e3db",
+                "reference": "af4f1f4d2ba5357339ce3bc2b985512816c3e3db",
                 "shasum": ""
             },
             "require": {
                 "fzaninotto/faker": "*",
-                "yiisoft/yii2": "*"
+                "yiisoft/yii2": "~2.0.0"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1595,7 +1324,7 @@
                 "faker",
                 "yii2"
             ],
-            "time": "2015-02-22 20:59:30"
+            "time": "2015-02-26 10:03:31"
         },
         {
             "name": "yiisoft/yii2-gii",
@@ -1603,19 +1332,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "3f9d49ae988ab6be459aed748ec0698fd45a3678"
+                "reference": "ed68a18a1e8353c07ff07eb43b1242996898fc94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/3f9d49ae988ab6be459aed748ec0698fd45a3678",
-                "reference": "3f9d49ae988ab6be459aed748ec0698fd45a3678",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/ed68a18a1e8353c07ff07eb43b1242996898fc94",
+                "reference": "ed68a18a1e8353c07ff07eb43b1242996898fc94",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/typeahead.js": "0.10.*",
                 "phpspec/php-diff": ">=1.0.2",
-                "yiisoft/yii2": "*",
-                "yiisoft/yii2-bootstrap": "*"
+                "yiisoft/yii2": "~2.0.0",
+                "yiisoft/yii2-bootstrap": "~2.0.0"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1644,14 +1373,12 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-02-25 10:49:26"
+            "time": "2015-02-26 10:03:31"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "knplabs/packagist-api": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
