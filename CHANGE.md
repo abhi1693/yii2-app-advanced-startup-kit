@@ -4,6 +4,7 @@ v0.0.3-dev
 
 - Added Menu Helper to backend
 - Added Database Settings to admin panel
+- Added FAQ
 
 v0.0.2
 ------
