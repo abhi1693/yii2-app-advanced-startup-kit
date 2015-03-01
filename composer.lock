@@ -95,12 +95,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-installer.git",
-                "reference": "98602f9244ac04d20dcd0cc2558033efb73e210a"
+                "reference": "9df035d0fc941224f8dfe2d722470c56e1a6e741"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/98602f9244ac04d20dcd0cc2558033efb73e210a",
-                "reference": "98602f9244ac04d20dcd0cc2558033efb73e210a",
+                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/9df035d0fc941224f8dfe2d722470c56e1a6e741",
+                "reference": "9df035d0fc941224f8dfe2d722470c56e1a6e741",
                 "shasum": ""
             },
             "require": {
@@ -132,7 +132,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-02-27 11:37:18"
+            "time": "2015-02-28 11:20:37"
         },
         {
             "name": "abhi1693/yii2-system-info",
@@ -178,17 +178,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-user.git",
-                "reference": "95ebdeb070d8ee206b119b97a42aee2aced933cb"
+                "reference": "bd632ae2448c6c7241067c67380dc08afd2a0abd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/95ebdeb070d8ee206b119b97a42aee2aced933cb",
-                "reference": "95ebdeb070d8ee206b119b97a42aee2aced933cb",
+                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/bd632ae2448c6c7241067c67380dc08afd2a0abd",
+                "reference": "bd632ae2448c6c7241067c67380dc08afd2a0abd",
                 "shasum": ""
             },
             "require": {
                 "kartik-v/yii2-grid": "dev-master",
                 "kartik-v/yii2-widget-alert": "*",
+                "kartik-v/yii2-widget-fileinput": "*",
                 "yiisoft/yii2": "*"
             },
             "type": "yii2-extension",
@@ -214,7 +215,7 @@
                 "user",
                 "yii"
             ],
-            "time": "2015-02-27 10:49:49"
+            "time": "2015-02-28 13:32:15"
         },
         {
             "name": "bower-asset/admin-lte",
@@ -549,6 +550,54 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "kartik-v/bootstrap-fileinput",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
+                "reference": "c99652203ecd1f14a0eaf1df10104748697f5f53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/c99652203ecd1f14a0eaf1df10104748697f5f53",
+                "reference": "c99652203ecd1f14a0eaf1df10104748697f5f53",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\plugins\\fileinput\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced HTML 5 file input for Bootstrap 3.x with features for file preview for many file types, multiple selection, ajax uploads, and more.",
+            "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
+            "keywords": [
+                "ajax",
+                "bootstrap",
+                "delete",
+                "file",
+                "image",
+                "input",
+                "jquery",
+                "multiple",
+                "preview",
+                "progress",
+                "upload"
+            ],
+            "time": "2015-02-24 18:26:23"
+        },
+        {
             "name": "kartik-v/yii2-grid",
             "version": "dev-master",
             "source": {
@@ -687,6 +736,56 @@
                 "yii2"
             ],
             "time": "2015-02-26 15:45:11"
+        },
+        {
+            "name": "kartik-v/yii2-widget-fileinput",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-fileinput.git",
+                "reference": "d1d89f26785cfc81e1e555b7315a460b6e7e8174"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/d1d89f26785cfc81e1e555b7315a460b6e7e8174",
+                "reference": "d1d89f26785cfc81e1e555b7315a460b6e7e8174",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/bootstrap-fileinput": "*",
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\file\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced FileInput widget for Bootstrap 3.x with file preview, multiple selection, and more features (sub repo split from yii2-widgets)",
+            "homepage": "https://github.com/kartik-v/yii2-widget-fileinput",
+            "keywords": [
+                "extension",
+                "file",
+                "form",
+                "input",
+                "jquery",
+                "plugin",
+                "upload",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-02-26 16:15:46"
         },
         {
             "name": "kartik-v/yii2-widget-sidenav",
@@ -898,12 +997,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "3895ad86f78d76acedc79a4660ff3da0b1089057"
+                "reference": "cd8bb8a9d8e5507708176b4734bcca64a1490952"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3895ad86f78d76acedc79a4660ff3da0b1089057",
-                "reference": "3895ad86f78d76acedc79a4660ff3da0b1089057",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/cd8bb8a9d8e5507708176b4734bcca64a1490952",
+                "reference": "cd8bb8a9d8e5507708176b4734bcca64a1490952",
                 "shasum": ""
             },
             "require": {
@@ -978,7 +1077,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-27 10:31:45"
+            "time": "2015-02-27 21:11:03"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
