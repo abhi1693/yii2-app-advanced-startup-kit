@@ -30,8 +30,6 @@
 			                          ]);
 		?>
 
-		<hr/>
-
 		<div class="form-group">
 			<?=
 				$form->field($model, 'hostname')->textInput([
@@ -50,8 +48,6 @@
 					                                            'class'        => 'form-control'
 				                                            ])->hint('Your MySQL username') ?>
 		</div>
-
-		<hr/>
 
 		<div class="form-group">
 			<?=
