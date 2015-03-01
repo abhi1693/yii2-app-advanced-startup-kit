@@ -14,6 +14,7 @@
 	use abhimanyu\installer\InstallerModule;
 	use backend\models\BasicSettingForm;
 	use backend\models\DatabaseSettingForm;
+	use backend\models\InstallerForm;
 	use backend\models\MailFormSetting;
 	use Yii;
 	use yii\db\Connection;
@@ -60,6 +61,10 @@
 							'label' => 'Mail'
 						],
 						[
+							'url'   => ['/admin/setting/install'],
+							'label' => 'Installer'
+						],
+						[
 							'url'   => ['/admin/setting/self-test'],
 							'label' => 'Self Test'
 						]
@@ -90,7 +95,7 @@
 					'class' => AccessControl::className(),
 					'rules' => [
 						[
-							'actions' => ['index', 'database', 'mail', 'self-test'],
+							'actions' => ['index', 'database', 'mail', 'install', 'self-test'],
 							'allow'   => TRUE,
 							'roles'   => ['@'],
 						],
@@ -205,8 +210,8 @@
 
 		public function actionMail()
 		{
-			$model                                                = new MailFormSetting();
-			$model->mailUseTransport                              = Yii::$app->config->get(Enum::MAILER_USE_TRANSPORT) === 'true' ? '1' : '0';
+			$model                   = new MailFormSetting();
+			$model->mailUseTransport = Yii::$app->config->get(Enum::MAILER_USE_TRANSPORT) === 'true' ? '1' : '0';
 
 			if ($model->load(Yii::$app->request->post())) {
 				if ($model->validate()) {
@@ -223,7 +228,7 @@
 					Yii::$app->config->set(Enum::MAILER_USE_TRANSPORT, $model->mailUseTransport ? 'true' : 'false');
 
 					$config                                                  = Configuration::get();
-					$config['components']['mail']['useTransport'] = $model->mailUseTransport;
+					$config['components']['mail']['useTransport']            = $model->mailUseTransport;
 					$config['components']['mail']['transport']['host']       = $model->mailHost;
 					$config['components']['mail']['transport']['username']   = $model->mailUsername;
 					$config['components']['mail']['transport']['password']   = $model->mailPassword;
@@ -231,7 +236,7 @@
 					$config['components']['mail']['transport']['encryption'] = $model->mailEncryption;
 
 					// Write config for future use
-					$config['params']['installer']['mail']['UseTransport'] = $model->mailUseTransport;
+					$config['params']['installer']['mail']['useTransport']            = $model->mailUseTransport;
 					$config['params']['installer']['mail']['transport']['host']       = $model->mailHost;
 					$config['params']['installer']['mail']['transport']['username']   = $model->mailUsername;
 					$config['params']['installer']['mail']['transport']['password']   = $model->mailPassword;
@@ -245,6 +250,21 @@
 			}
 
 			return $this->render('mail', ['model' => $model]);
+		}
+
+		public function actionInstall()
+		{
+			$model  = new InstallerForm();
+			$config = Configuration::get();
+
+			if ($model->load(Yii::$app->request->post())) {
+				$model->install                = $model->install === '0' ? TRUE : FALSE;
+				$config['params']['installed'] = $model->install;
+
+				Configuration::set($config);
+			}
+
+			return $this->render('install', ['model' => $model]);
 		}
 
 		public function actionSelfTest()
