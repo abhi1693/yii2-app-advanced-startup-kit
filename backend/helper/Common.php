@@ -15,7 +15,7 @@
 
 		public static function getVersion()
 		{
-			return 'v0.0.3';
+			return 'v0.0.4-dev';
 		}
 
 		public static function getCreator()

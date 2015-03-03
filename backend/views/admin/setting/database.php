@@ -7,6 +7,7 @@
 	 */
 
 	use kartik\alert\AlertBlock;
+	use yii\helpers\Html;
 	use yii\widgets\ActiveForm;
 
 	/** @var $this \yii\web\View */
@@ -68,8 +69,8 @@
 
 		<hr/>
 
-		<?= \yii\helpers\Html::submitButton('Save', ['class' => 'btn btn-primary']) ?>
+		<?= Html::submitButton('Save', ['class' => 'btn btn-primary']) ?>
 
-		<?php \yii\widgets\ActiveForm::end(); ?>
+		<?php ActiveForm::end(); ?>
 	</div>
 </div>
