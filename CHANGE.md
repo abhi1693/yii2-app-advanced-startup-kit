@@ -1,3 +1,10 @@
+v0.0.4-dev
+----------
+**Date:** 2015-03-03
+
+- Added User Account Settings
+- Added User Module Settings
+
 v0.0.3
 ------
 **Date:** 2015-03-01

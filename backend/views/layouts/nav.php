@@ -31,6 +31,7 @@
 				'label' => Profile::findOne(['uid' => Yii::$app->user->getId()])
 				['name_first'] ?: Yii::$app->user->identity->username,
 				'items' => [
+					['label' => 'Account Settings', 'url' => ['/user/account/profile']],
 					['label' => 'Logout', 'url' => ['/user/auth/logout'], 'linkOptions' => ['data-method' => 'post']]
 				]
 			]

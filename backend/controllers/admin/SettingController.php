@@ -31,7 +31,14 @@
 		{
 			$menuItems       = NULL;
 			$menuItemPresets = [
-				'user' => ['label' => 'Users', 'url' => ['/user/admin'], 'icon' => 'user'],
+				'user' => [
+					'label' => 'Users',
+					'icon'  => 'user',
+					'items' => [
+						['label' => 'Manage', 'url' => ['/user/admin'], 'icon' => 'user'],
+						['label' => 'Settings', 'url' => ['/user/settings/index'], 'icon' => 'cog']
+					]
+				],
 			];
 			$autoMenuItems   = [
 				[

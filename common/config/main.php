@@ -11,14 +11,14 @@
 			],
 			'gridview'  => [
 				'class' => \kartik\grid\Module::className()
-			]
+			],
 		],
 		'components' => [
-			'db'   => [
+			'db'         => [
 				'class' => \yii\db\Connection::className(),
 				'dsn'   => 'mysql:host=localhost;dbname='
 			],
-			'user' => [
+			'user'       => [
 				'identityClass' => \abhimanyu\user\models\UserIdentity::className(),
 				'loginUrl'      => ['/user/auth/login'],
 			],
@@ -28,7 +28,7 @@
 			'urlManager' => [
 				'enablePrettyUrl' => TRUE,
 				'showScriptName'  => FALSE,
-			]
+			],
 		],
 		'params'     => [
 			'installed' => FALSE

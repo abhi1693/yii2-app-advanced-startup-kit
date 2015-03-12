@@ -38,7 +38,7 @@
 				                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 			                        ]) ?>
 			<div class="row">
-				<?php if (!Yii::$app->user->isGuest) { ?>
+				<?php if (!Yii::$app->user->isGuest && Yii::$app->controller->id != 'account') { ?>
 					<div class="col-md-2">
 						<?=
 							SideNav::widget([

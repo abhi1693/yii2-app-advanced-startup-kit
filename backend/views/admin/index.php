@@ -93,11 +93,6 @@
 							<td>Total Memory</td>
 							<td><?= Yii::$app->formatter->asShortSize($systemInfo::getTotalMemory()) ?></td>
 						</tr>
-
-						<tr>
-							<td>Free Memory</td>
-							<td><?= Yii::$app->formatter->asShortSize(0) ?></td>
-						</tr>
 					</table>
 				</div>
 				<!-- /.box-body -->
