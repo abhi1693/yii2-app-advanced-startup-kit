@@ -108,7 +108,6 @@ You also can adjust you application suite configs and `_bootstrap.php` settings 
 ## Dependencies
 
 - [Yii2-Config](https://github.com/abhi1693/yii2-config)
-- [Yii2-Enum](https://github.com/abhi1693/yii2-enum)
 - [Yii2-User](https://github.com/abhi1693/yii2-user)
 - [Yii2-Installer](https://github.com/abhi1693/yii2-installer)
 - [Yii2-System-Info](https://github.com/abhi1693/yii2-system-info)
