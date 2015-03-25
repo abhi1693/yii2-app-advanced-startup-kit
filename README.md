@@ -111,3 +111,4 @@ You also can adjust you application suite configs and `_bootstrap.php` settings 
 - [Yii2-User](https://github.com/abhi1693/yii2-user)
 - [Yii2-Installer](https://github.com/abhi1693/yii2-installer)
 - [Yii2-System-Info](https://github.com/abhi1693/yii2-system-info)
+- [Yii2-Rbac](https://github.com/abhi1693/yii2-rbac)
