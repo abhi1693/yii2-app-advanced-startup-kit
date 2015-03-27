@@ -170,6 +170,8 @@ class SettingController extends Controller
 	public function actionDatabase()
 	{
 		$config = Configuration::get();
+		$param = Configuration::getParam();
+
 		$form = new DatabaseSettingForm();
 
 		if ($form->load(Yii::$app->request->post())) {
@@ -196,11 +198,12 @@ class SettingController extends Controller
 						$config['components']['db']['charset'] = 'utf8';
 
 						// Write config for future use
-						$config['params']['installer']['db']['installer_hostname'] = $form->hostname;
-						$config['params']['installer']['db']['installer_database'] = $form->database;
-						$config['params']['installer']['db']['installer_username'] = $form->username;
+						$param['installer']['db']['installer_hostname'] = $form->hostname;
+						$param['installer']['db']['installer_database'] = $form->database;
+						$param['installer']['db']['installer_username'] = $form->username;
 
 						Configuration::set($config);
+						Configuration::setParam($param);
 
 						Yii::$app->getSession()->setFlash('success', 'Database settings saved');
 					} else {
@@ -211,14 +214,14 @@ class SettingController extends Controller
 				}
 			}
 		} else {
-			if (isset($config['params']['installer']['db']['installer_hostname']))
-				$form->hostname = $config['params']['installer']['db']['installer_hostname'];
+			if (isset($param['installer']['db']['installer_hostname']))
+				$form->hostname = $param['installer']['db']['installer_hostname'];
 
-			if (isset($config['params']['installer']['db']['installer_database']))
-				$form->database = $config['params']['installer']['db']['installer_database'];
+			if (isset($param['installer']['db']['installer_database']))
+				$form->database = $param['installer']['db']['installer_database'];
 
-			if (isset($config['params']['installer']['db']['installer_username']))
-				$form->username = $config['params']['installer']['db']['installer_username'];
+			if (isset($param['installer']['db']['installer_username']))
+				$form->username = $param['installer']['db']['installer_username'];
 		}
 
 		return $this->render('database', ['model' => $form]);
@@ -244,6 +247,8 @@ class SettingController extends Controller
 				Yii::$app->config->set(Enum::MAILER_USE_TRANSPORT, $model->mailUseTransport ? 'true' : 'false');
 
 				$config = Configuration::get();
+				$param = Configuration::getParam();
+
 				$config['components']['mail']['useTransport'] = $model->mailUseTransport;
 				$config['components']['mail']['transport']['host'] = $model->mailHost;
 				$config['components']['mail']['transport']['username'] = $model->mailUsername;
@@ -252,14 +257,15 @@ class SettingController extends Controller
 				$config['components']['mail']['transport']['encryption'] = $model->mailEncryption;
 
 				// Write config for future use
-				$config['params']['installer']['mail']['useTransport'] = $model->mailUseTransport;
-				$config['params']['installer']['mail']['transport']['host'] = $model->mailHost;
-				$config['params']['installer']['mail']['transport']['username'] = $model->mailUsername;
-				$config['params']['installer']['mail']['transport']['password'] = $model->mailPassword;
-				$config['params']['installer']['mail']['transport']['port'] = $model->mailPort;
-				$config['params']['installer']['mail']['transport']['encryption'] = $model->mailEncryption;
+				$param['installer']['mail']['useTransport'] = $model->mailUseTransport;
+				$param['installer']['mail']['transport']['host'] = $model->mailHost;
+				$param['installer']['mail']['transport']['username'] = $model->mailUsername;
+				$param['installer']['mail']['transport']['password'] = $model->mailPassword;
+				$param['installer']['mail']['transport']['port'] = $model->mailPort;
+				$param['installer']['mail']['transport']['encryption'] = $model->mailEncryption;
 
 				Configuration::set($config);
+				Configuration::setParam($param);
 
 				Yii::$app->session->setFlash('success', 'Mail Settings Saved');
 			}
@@ -271,13 +277,13 @@ class SettingController extends Controller
 	public function actionInstall()
 	{
 		$model = new InstallerForm();
-		$config = Configuration::get();
+		$param = Configuration::getParam();
 
 		if ($model->load(Yii::$app->request->post())) {
 			$model->install = $model->install === '0' ? TRUE : FALSE;
-			$config['params']['installed'] = $model->install;
+			$param['installed'] = $model->install;
 
-			Configuration::set($config);
+			Configuration::setParam($param);
 		}
 
 		return $this->render('install', ['model' => $model]);
