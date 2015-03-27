@@ -68,8 +68,7 @@ GETTING STARTED
 ---------------
 
 After you install the application, just run `init` command (without altering anything in the `environment` folder) 
-and select your environment then go to `http://yourhost/your-app/` or `http://yourhost/your-app/backend` and the  
-application will help you setup everything else.
+and select your environment then go to `http://yourhost/your-app/` and the application will help you setup everything else.
 
 FAQ
 ---
