@@ -1,10 +1,40 @@
 <?php
 
 use abhimanyu\installer\helpers\enums\Configuration as Enum;
+use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 $this->title = Yii::$app->config->get(Enum::APP_NAME);
 ?>
+
+<style>
+	.circle {
+		display: inline-block;
+		border-radius: 50%;
+		border: 2px solid #555;
+		width: 200px;
+		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		padding-top: 60px;
+		margin: 0 30px;
+		font-size: 18px;
+		color: #555;
+	}
+
+	.circle:hover, .circle:focus {
+		text-decoration: none;
+		color: #7DB4B5;
+		border-color: #7DB4B5;
+	}
+
+	.circle i {
+		font-size: 46px;
+		margin-bottom: 10px;
+	}
+</style>
+
 <div class="site-index">
 
 	<div class="jumbotron">
@@ -13,52 +43,39 @@ $this->title = Yii::$app->config->get(Enum::APP_NAME);
 		<p class="lead">You have successfully created your Yii-powered application.</p>
 
 		<p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-	</div>
 
-	<div class="body-content">
+		<br/>
 
-		<div class="row">
-			<div class="col-lg-4">
-				<h2>Heading</h2>
+		<div class="body-content">
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et
-					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip
-					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-					dolore eu
-					fugiat nulla pariatur.</p>
+			<?php if (!Yii::$app->params[Enum::APP_INSTALLED]): ?>
+				<?= Html::a('<i class="glyphicon glyphicon-save"></i> Install Application', ['/backend/installer/install/index'], [
+					'target' => '_blank',
+					'class'  => 'circle'
+				]) ?>
 
-				<p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-			</div>
-			<div class="col-lg-4">
-				<h2>Heading</h2>
+			<?php else: ?>
+				<?= Html::a('<i class="glyphicon glyphicon-wrench"></i> Control Panel', ['/backend/'], [
+					'target' => '_blank',
+					'class'  => 'circle'
+				]) ?>
+			<?php endif; ?>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et
-					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip
-					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-					dolore eu
-					fugiat nulla pariatur.</p>
+			<?= Html::a('<i class="glyphicon glyphicon-book"></i> Documentation', 'http://abhi1693.github.io/yii2-app-advanced-startup-kit/', [
+				'target' => '_blank',
+				'class'  => 'circle'
+			]) ?>
 
-				<p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-			</div>
-			<div class="col-lg-4">
-				<h2>Heading</h2>
+			<hr/>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et
-					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip
-					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-					dolore eu
-					fugiat nulla pariatur.</p>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="7PYYQRY3NHL6G">
+				<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" border="0"
+				       name="submit" alt="PayPal – The safer, easier way to pay online.">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+			</form>
 
-				<p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a>
-				</p>
-			</div>
 		</div>
-
 	</div>
 </div>
