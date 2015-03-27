@@ -17,7 +17,7 @@ $this->title = Yii::$app->config->get(Enum::APP_NAME);
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
-		padding-top: 60px;
+		padding-top: 75px;
 		margin: 0 30px;
 		font-size: 18px;
 		color: #555;
@@ -30,7 +30,7 @@ $this->title = Yii::$app->config->get(Enum::APP_NAME);
 	}
 
 	.circle i {
-		font-size: 46px;
+		font-size: 30px;
 		margin-bottom: 10px;
 	}
 </style>
