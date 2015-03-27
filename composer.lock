@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-installer.git",
-                "reference": "96b9bce3bd13caf50650fd22ac6a532998aa199b"
+                "reference": "36bea5ddc0bab67209e8e54abf17edfe3a9b4c0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/96b9bce3bd13caf50650fd22ac6a532998aa199b",
-                "reference": "96b9bce3bd13caf50650fd22ac6a532998aa199b",
+                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/36bea5ddc0bab67209e8e54abf17edfe3a9b4c0c",
+                "reference": "36bea5ddc0bab67209e8e54abf17edfe3a9b4c0c",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-03-27 20:58:46"
+            "time": "2015-03-27 21:44:22"
         },
         {
             "name": "abhi1693/yii2-system-info",
