@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f03fd0d5583c356674fba9a2eef9285f",
+    "hash": "a7aab8251ee847890206a5197e02a493",
     "packages": [
         {
             "name": "abhi1693/yii2-config",
@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-installer.git",
-                "reference": "fec2a6bcfadf05ab7f0781103a24dbf658181f9b"
+                "reference": "96b9bce3bd13caf50650fd22ac6a532998aa199b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/fec2a6bcfadf05ab7f0781103a24dbf658181f9b",
-                "reference": "fec2a6bcfadf05ab7f0781103a24dbf658181f9b",
+                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/96b9bce3bd13caf50650fd22ac6a532998aa199b",
+                "reference": "96b9bce3bd13caf50650fd22ac6a532998aa199b",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-03-24 11:06:11"
+            "time": "2015-03-27 20:58:46"
         },
         {
             "name": "abhi1693/yii2-system-info",
@@ -130,16 +130,16 @@
         },
         {
             "name": "abhi1693/yii2-user",
-            "version": "dev-master",
+            "version": "v0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-user.git",
-                "reference": "2f2c51707f9f2254598d12655a96def0d56e470c"
+                "reference": "b5761c1b82407a59795181c051d76140abc5118a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/2f2c51707f9f2254598d12655a96def0d56e470c",
-                "reference": "2f2c51707f9f2254598d12655a96def0d56e470c",
+                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/b5761c1b82407a59795181c051d76140abc5118a",
+                "reference": "b5761c1b82407a59795181c051d76140abc5118a",
                 "shasum": ""
             },
             "require": {
@@ -173,24 +173,7 @@
                 "user",
                 "yii"
             ],
-            "time": "2015-03-25 07:23:37"
-        },
-        {
-            "name": "bower-asset/admin-lte",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/almasaeed2010/AdminLTE.git",
-                "reference": "a2b8c69593d5cc1a552a4f64113a57abe37dca33"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/a2b8c69593d5cc1a552a4f64113a57abe37dca33",
-                "reference": "a2b8c69593d5cc1a552a4f64113a57abe37dca33",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "time": "2015-02-25 01:46:58"
+            "time": "2015-03-24 11:25:05"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -289,16 +272,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.61",
+            "version": "3.1.62",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "f2c086411d2557fc485c47afb3cecfa6c1de9ee2"
+                "reference": "da1a274cefa18a52a0519ac7ffe8e8d31e950eae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/f2c086411d2557fc485c47afb3cecfa6c1de9ee2",
-                "reference": "f2c086411d2557fc485c47afb3cecfa6c1de9ee2",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/da1a274cefa18a52a0519ac7ffe8e8d31e950eae",
+                "reference": "da1a274cefa18a52a0519ac7ffe8e8d31e950eae",
                 "shasum": ""
             },
             "require": {
@@ -514,12 +497,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "b75eeb60b6dc80a6b4951ad73e846a61ce092b09"
+                "reference": "71b4edc8587c05227444476f5629f35637e8fba9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/b75eeb60b6dc80a6b4951ad73e846a61ce092b09",
-                "reference": "b75eeb60b6dc80a6b4951ad73e846a61ce092b09",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/71b4edc8587c05227444476f5629f35637e8fba9",
+                "reference": "71b4edc8587c05227444476f5629f35637e8fba9",
                 "shasum": ""
             },
             "type": "library",
@@ -554,7 +537,7 @@
                 "progress",
                 "upload"
             ],
-            "time": "2015-03-23 16:48:52"
+            "time": "2015-03-26 17:45:04"
         },
         {
             "name": "kartik-v/yii2-grid",
@@ -562,12 +545,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-grid.git",
-                "reference": "2c486411df1c8ebd9bb3fcd7f9bd47429a9cbdf0"
+                "reference": "d80540ec05931f819bd0dea16a76f989776ce09c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/2c486411df1c8ebd9bb3fcd7f9bd47429a9cbdf0",
-                "reference": "2c486411df1c8ebd9bb3fcd7f9bd47429a9cbdf0",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/d80540ec05931f819bd0dea16a76f989776ce09c",
+                "reference": "d80540ec05931f819bd0dea16a76f989776ce09c",
                 "shasum": ""
             },
             "require": {
@@ -598,7 +581,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-03-24 19:25:09"
+            "time": "2015-03-25 08:14:18"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -801,16 +784,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/raoul2000/yii2-bootswatch-asset.git",
-                "reference": "fd1db711d930072860288d580a3ce01fd4baa3d6"
+                "reference": "abe7e67f23c282967c934117195d1af61e16e9c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/raoul2000/yii2-bootswatch-asset/zipball/fd1db711d930072860288d580a3ce01fd4baa3d6",
-                "reference": "fd1db711d930072860288d580a3ce01fd4baa3d6",
+                "url": "https://api.github.com/repos/raoul2000/yii2-bootswatch-asset/zipball/abe7e67f23c282967c934117195d1af61e16e9c5",
+                "reference": "abe7e67f23c282967c934117195d1af61e16e9c5",
                 "shasum": ""
             },
             "require": {
-                "thomaspark/bootswatch": "3.3.2",
+                "thomaspark/bootswatch": "3.3.4",
                 "yiisoft/yii2": "*"
             },
             "type": "yii2-extension",
@@ -838,7 +821,7 @@
                 "skin",
                 "yii2"
             ],
-            "time": "2015-01-31 16:54:21"
+            "time": "2015-03-25 10:01:59"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -894,16 +877,16 @@
         },
         {
             "name": "thomaspark/bootswatch",
-            "version": "v3.3.2",
+            "version": "v3.3.4+1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thomaspark/bootswatch.git",
-                "reference": "7e6070630176d8a802c4837345d5998eac7c1d7a"
+                "reference": "49ccd07144a7ed8917ab8b715233ffe288a6a9f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thomaspark/bootswatch/zipball/7e6070630176d8a802c4837345d5998eac7c1d7a",
-                "reference": "7e6070630176d8a802c4837345d5998eac7c1d7a",
+                "url": "https://api.github.com/repos/thomaspark/bootswatch/zipball/49ccd07144a7ed8917ab8b715233ffe288a6a9f0",
+                "reference": "49ccd07144a7ed8917ab8b715233ffe288a6a9f0",
                 "shasum": ""
             },
             "suggest": {
@@ -948,7 +931,7 @@
                 }
             ],
             "description": "Themes for Bootstrap",
-            "time": "2015-01-23 03:42:19"
+            "time": "2015-03-23 20:56:57"
         },
         {
             "name": "yiisoft/yii2",
@@ -956,12 +939,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "affc71838579bd0895f2f3e0080abe2ac55d847f"
+                "reference": "6b8da53205fd8b934b12a84f4418c6abb5d4714f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/affc71838579bd0895f2f3e0080abe2ac55d847f",
-                "reference": "affc71838579bd0895f2f3e0080abe2ac55d847f",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/6b8da53205fd8b934b12a84f4418c6abb5d4714f",
+                "reference": "6b8da53205fd8b934b12a84f4418c6abb5d4714f",
                 "shasum": ""
             },
             "require": {
@@ -1036,7 +1019,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-03-25 01:18:59"
+            "time": "2015-03-27 02:57:27"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -1189,16 +1172,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-                "reference": "cab046bddcac9cf179fbcbe48ab62aa512f088ad"
+                "reference": "8d5d9c9782ba28e6b47c65270eed6a238c781abd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/cab046bddcac9cf179fbcbe48ab62aa512f088ad",
-                "reference": "cab046bddcac9cf179fbcbe48ab62aa512f088ad",
+                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/8d5d9c9782ba28e6b47c65270eed6a238c781abd",
+                "reference": "8d5d9c9782ba28e6b47c65270eed6a238c781abd",
                 "shasum": ""
             },
             "require": {
-                "swiftmailer/swiftmailer": "~5.4",
+                "swiftmailer/swiftmailer": "~5.0",
                 "yiisoft/yii2": "*"
             },
             "type": "yii2-extension",
@@ -1231,7 +1214,7 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "time": "2015-03-24 11:41:29"
+            "time": "2015-03-25 12:25:47"
         }
     ],
     "packages-dev": [
