@@ -55,7 +55,7 @@ $this->title = Yii::$app->config->get(Enum::APP_NAME);
 				]) ?>
 
 			<?php else: ?>
-				<?= Html::a('<i class="glyphicon glyphicon-wrench"></i> Control Panel', ['/backend/'], [
+				<?= Html::a('<i class="glyphicon glyphicon-wrench"></i> Control Panel', ['/admin/index'], [
 					'target' => '_blank',
 					'class'  => 'circle'
 				]) ?>
