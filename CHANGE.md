@@ -7,6 +7,7 @@ v0.0.4-dev
 - Added Admin Panel Sidenav User Module Settings Url
 - Updated Frontend
 - Added Quick Links on the frontend for easy access
+- Added admin mail input to admin panel
 
 v0.0.3
 ------
