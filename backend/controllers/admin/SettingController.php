@@ -129,6 +129,7 @@ class SettingController extends Controller
 		if ($model->load(Yii::$app->request->post())) {
 			if ($model->validate()) {
 				Yii::$app->config->set(Enum::APP_NAME, $model->appName);
+				Yii::$app->config->set(Enum::ADMIN_EMAIL, $model->adminMail);
 				Yii::$app->config->set(Enum::APP_BACKEND_THEME, $model->appBackendTheme);
 				Yii::$app->config->set(Enum::APP_FRONTEND_THEME, $model->appFrontendTheme);
 				Yii::$app->config->set(Enum::CACHE_CLASS, $model->cacheClass);
