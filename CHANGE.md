@@ -8,6 +8,7 @@ v0.0.4-dev
 - Updated Frontend
 - Added Quick Links on the frontend for easy access
 - Added admin mail input to admin panel
+- Removed Admin LTE css
 
 v0.0.3
 ------
