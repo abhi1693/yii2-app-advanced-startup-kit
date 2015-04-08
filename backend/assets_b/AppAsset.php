@@ -21,7 +21,6 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'font-awesome/css/font-awesome.min.css',
-        'css/AdminLTE.css'
     ];
     public $js = [
     ];
