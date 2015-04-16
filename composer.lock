@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-installer.git",
-                "reference": "5ee7ffd320395de31da44cf96faef308d2b4edd4"
+                "reference": "5b7e0746377b006fa5556c4f069fcb53e5b8ea36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/5ee7ffd320395de31da44cf96faef308d2b4edd4",
-                "reference": "5ee7ffd320395de31da44cf96faef308d2b4edd4",
+                "url": "https://api.github.com/repos/abhi1693/yii2-installer/zipball/5b7e0746377b006fa5556c4f069fcb53e5b8ea36",
+                "reference": "5b7e0746377b006fa5556c4f069fcb53e5b8ea36",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-04-16 06:09:48"
+            "time": "2015-04-16 06:45:33"
         },
         {
             "name": "abhi1693/yii2-system-info",
@@ -130,16 +130,16 @@
         },
         {
             "name": "abhi1693/yii2-user",
-            "version": "v0.0.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/abhi1693/yii2-user.git",
-                "reference": "b5761c1b82407a59795181c051d76140abc5118a"
+                "reference": "cce748e71678fb2ae2daf8de59db06b223eb3c2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/b5761c1b82407a59795181c051d76140abc5118a",
-                "reference": "b5761c1b82407a59795181c051d76140abc5118a",
+                "url": "https://api.github.com/repos/abhi1693/yii2-user/zipball/cce748e71678fb2ae2daf8de59db06b223eb3c2b",
+                "reference": "cce748e71678fb2ae2daf8de59db06b223eb3c2b",
                 "shasum": ""
             },
             "require": {
@@ -148,7 +148,8 @@
                 "kartik-v/yii2-widget-alert": "*",
                 "kartik-v/yii2-widget-fileinput": "*",
                 "yiisoft/yii2": "*",
-                "yiisoft/yii2-authclient": "~2.0.0"
+                "yiisoft/yii2-authclient": "~2.0.0",
+                "zelenin/yii2-recaptcha-widget": "*"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -173,7 +174,7 @@
                 "user",
                 "yii"
             ],
-            "time": "2015-03-24 11:25:05"
+            "time": "2015-04-16 07:15:57"
         },
         {
             "name": "bower-asset/bootstrap",

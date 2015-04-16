@@ -43,7 +43,7 @@ class SettingController extends Controller
 						],
 						[
 							'label' => 'Auth Clients',
-							'url'   => ['/user/settings/auth-clients']
+							'url' => ['/user/settings/auth-client']
 						]
 					]]
 				]

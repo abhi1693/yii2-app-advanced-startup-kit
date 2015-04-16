@@ -1,14 +1,14 @@
 <?php
-	use abhimanyu\installer\helpers\enums\Configuration as Enum;
-	use backend\assets_b\AppAsset;
-	use yii\helpers\Html;
-	use yii\widgets\Breadcrumbs;
+use abhimanyu\installer\helpers\enums\Configuration as Enum;
+use backend\assets_b\AppAsset;
+use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 
-	/* @var $this \yii\web\View */
-	/* @var $content string */
+/* @var $this \yii\web\View */
+/* @var $content string */
 
-	raoul2000\bootswatch\BootswatchAsset::$theme = Yii::$app->config->get(Enum::APP_BACKEND_THEME, 'yeti');
-	AppAsset::register($this);
+raoul2000\bootswatch\BootswatchAsset::$theme = Yii::$app->config->get(Enum::APP_BACKEND_THEME, 'yeti');
+AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -27,8 +27,8 @@
 
 	<div class="container">
 		<?= Breadcrumbs::widget([
-			                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-		                        ]) ?>
+			'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+		]) ?>
 		<?= $content ?>
 	</div>
 </div>
