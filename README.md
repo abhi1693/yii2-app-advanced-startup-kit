@@ -14,6 +14,8 @@ It covers typical use cases for a new project and will help you not to waste you
 
 FEATURES
 --------
+> Note: Some features are still under development. Please use it at your own risk
+
 - Application Auto Installer includes:
   - Application Basic Setup such as Application Name, Cache type, backend/frontend theme etc.
   - Admin Account setup
