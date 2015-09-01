@@ -12,6 +12,13 @@ It covers typical use cases for a new project and will help you not to waste you
 
 **Note: The application is still under development. Use it at your own risk**
 
+DONATE
+------
+
+Any contribution helps us to improve [Yii2 Startup Kit](https://github.com/abhi1693/yii2-app-advanced-startup-kit), if you want to help us too but don't want to get into coding, we won't say no to PayPal
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EHXMKZ3NLKR7W)
+
 FEATURES
 --------
 > Note: Some features are still under development. Please use it at your own risk
@@ -119,4 +126,4 @@ You also can adjust you application suite configs and `_bootstrap.php` settings 
 
 Any contribution helps us to improve [Yii2 Startup Kit](https://github.com/abhi1693/yii2-app-advanced-startup-kit), if you want to help us too but don't want to get into coding, we won't say no to PayPal
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=__s-xclick&hosted_button_id=7PYYQRY3NHL6G)
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EHXMKZ3NLKR7W)
