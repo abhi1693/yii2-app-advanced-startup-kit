@@ -114,3 +114,9 @@ You also can adjust you application suite configs and `_bootstrap.php` settings 
 - [Yii2-Installer](https://github.com/abhi1693/yii2-installer)
 - [Yii2-System-Info](https://github.com/abhi1693/yii2-system-info)
 - [Yii2-Rbac](https://github.com/abhi1693/yii2-rbac)
+
+# Donate
+
+Any contribution helps us to improve [Yii2 Startup Kit](https://github.com/abhi1693/yii2-app-advanced-startup-kit), if you want to help us too but don't want to get into coding, we won't say no to PayPal
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=__s-xclick&hosted_button_id=7PYYQRY3NHL6G)
