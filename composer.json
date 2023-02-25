@@ -35,7 +35,7 @@
     "raoul2000/yii2-bootswatch-asset": "*",
     "kartik-v/yii2-widget-sidenav": "*",
     "kartik-v/yii2-widget-alert": "*",
-    "zelenin/yii2-recaptcha-widget": "*",
+    "himiklab/yii2-recaptcha-widget": "*",
     "wbraganca/yii2-dynamicform": "*"
   },
   "require-dev": {
